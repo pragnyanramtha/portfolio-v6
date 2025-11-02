@@ -1,15 +1,9 @@
 import { StaticImageData } from "next/image";
 
 import {
-  AirwatchImage,
   AutopilotImage,
   CheatSheetAIImage,
   CloneImage,
-  LibraryImage,
-  SkygazeImage,
-  TodoImage,
-  VIPSImage,
-  VueBitsImage,
 } from "@/assets";
 
 export interface IProjectData {
@@ -18,7 +12,7 @@ export interface IProjectData {
   DESCRIPTION: string[];
   NOTE?: string;
   TECH_STACK: string[];
-  IMAGE: StaticImageData;
+  IMAGE?: StaticImageData;
 }
 
 export const DATA = {

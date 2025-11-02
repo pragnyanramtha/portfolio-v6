@@ -10,7 +10,7 @@ import Image, { StaticImageData } from "next/image";
 import React from "react";
 
 interface IProjectData {
-  IMAGE: StaticImageData;
+  IMAGE?: StaticImageData;
   LIVE_PREVIEW?: string;
   GITHUB?: string;
   DESCRIPTION: string[];
