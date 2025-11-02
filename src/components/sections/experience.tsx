@@ -1,4 +1,3 @@
-import { extractDomain } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
 
 interface IExperienceData {
@@ -39,7 +38,7 @@ export function Experience({
                       className="flex items-center gap-1 ml-1"
                       href={value.WEBSITE}
                     >
-                      {extractDomain(value.WEBSITE)} <ArrowUpRight size={18} />
+                      {key} <ArrowUpRight size={18} />
                     </a>
                   </p>
                 </div>

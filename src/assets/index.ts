@@ -1,4 +1,7 @@
 export { default as AirwatchImage } from "./airwatch.webp";
+export { default as AutopilotImage } from "./autopilot.png";
+export { default as CheatSheetAIImage } from "./cheatsheet-ai.jpg";
+export { default as CloneImage } from "./clone.jpg";
 export { default as LibraryImage } from "./library.webp";
 export { default as SkygazeImage } from "./skygaze.webp";
 export { default as TodoImage } from "./todo.webp";

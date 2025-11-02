@@ -6,6 +6,11 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function extractDomain(url: string): string {
-  const hostname = new URL(url).hostname;
-  return hostname.replace(/^www\./, "");
+  try {
+    if (!url || typeof url !== "string") return "";
+    const hostname = new URL(url).hostname;
+    return hostname.replace(/^www\./, "");
+  } catch (_) {
+    return "";
+  }
 }

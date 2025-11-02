@@ -2,6 +2,9 @@ import { StaticImageData } from "next/image";
 
 import {
   AirwatchImage,
+  AutopilotImage,
+  CheatSheetAIImage,
+  CloneImage,
   LibraryImage,
   SkygazeImage,
   TodoImage,
@@ -20,290 +23,216 @@ export interface IProjectData {
 
 export const DATA = {
   HEADER: {
-    NAME: "Utkarsh Singhal",
-    AGE: "20",
+    NAME: "Pragnyan Ramtha",
+    AGE: "17",
     PRONOUN: "he/him",
     HEADLINE:
-      "Passionate about building high-performance and scalable web applications.",
-    RESUME:
-      "https://drive.google.com/file/d/1piWpArbdbjt4PKF4gZlR0nkD09au_8fE/view",
-    EMAIL: "mailto:singhalutkarsh26@gmail.com",
-    GITHUB: "https://github.com/Utkarsh-Singhal-26",
-    LINKEDIN: "https://www.linkedin.com/in/singhalutkarsh26",
+      "AI Research Scientist. I build things for fun and experiment with new technologies.",
+    RESUME: "/pragnyanrr-v3.pdf",
+    EMAIL: "mailto:pragnyanramtha@gmail.com",
+    GITHUB: "https://github.com/pragnyanramtha",
+    LINKEDIN: "https://www.linkedin.com/in/pragnyanramtha",
   },
 
   ABOUT_ME: {
     INTRO:
-      "Hey! I'm a full-stack developer who loves building efficient, scalable, and intuitive applications. I thrive on solving complex problems, optimizing performance, and creating seamless user experiences.",
+      "Hello! My name is Pragnyan and I enjoy creating things that make people go Damn! My interest in programming started back in 2020 when I decided to try editing custom Linux distros, turns out hacking together a custom OS taught me a lot about Linux and Programming!",
     EXPERTISE:
-      "My expertise lies in Next.js, TypeScript, Node.js, and Cloud technologies, and I enjoy working across the stack to bring ideas to life.",
+      "Fast-forward to today, I have worked as a Founding Engineer at Six Axis Studios. I’m focused on building projects, contributing to open source, and working on my skills. I also recently joined NIAT - MRV University and would love to network with students and alumni.",
   },
 
   EXPERIENCE: {
-    Suraasa: {
-      WEBSITE: "https://www.suraasa.com/",
-      POSITION: "Backend Developer Intern",
-      LOCATION: "Hybrid - Delhi, India",
-      DURATION: "Oct, 2025 - Present",
-      DESCRIPTION: [
-        "Undergoing comprehensive training in backend development, including Django framework, API design, and deployment best practices.",
-        "Collaborating with senior developers to understand the architecture and development workflow of large-scale web applications.",
-        "Will transition to working on live production projects post-training, contributing to scalable and high-performance backend solutions.",
-        "Focused on enhancing code quality, security, and performance through best practices and modern tools.",
-      ],
-      TECH_STACK: ["Python", "Django", "Git & Github", "AWS"],
-    },
-    "Aardo Solutions": {
-      WEBSITE: "https://www.aardosolutions.com/",
-      POSITION: "Software Developer",
+    "Six Axis Studios": {
+      WEBSITE: "https://6-axis-studios.vercel.app",
+      POSITION: "Founding Engineer",
       LOCATION: "Remote",
-      DURATION: "Nov, 2024 - Sep, 2025",
+      DURATION: "May, 2025 - Aug, 2025",
       DESCRIPTION: [
-        "Developed and maintained scalable web applications to enhance user engagement and operational efficiency.",
-        "Hosted and managed servers on AWS EC2, configured domains, and implemented SSL certificates for secure access.",
-        "Collaborated with cross-functional teams to design and implement scalable solutions.",
-        "Utilized modern frameworks and libraries to ensure responsive and dynamic user interfaces.",
+        "Built an AI agent to handle customer support queries, reducing response times by 50% and improving customer satisfaction by 65%.",
+        "Found insights in client data to improve the company's sales by 20%.",
+        "Built ai agents to increase efficiency and productivity of the company by 30%.",
       ],
-      TECH_STACK: [
-        "TypeScript",
-        "React.js",
-        "Next.js",
-        "Tailwind CSS",
-        "ShadCN",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "Firebase",
-        "Contentful",
-        "AWS",
-        "GCP",
-        "Vercel",
-        "Nginx",
-        "Git & Github",
-      ],
+      TECH_STACK: ["Scikit-learn", "LLM Agents", "APIs", "Python"],
     },
-    "Vivekananda Institute of Professional Studies - Technical Campus (VIPS-TC)":
-      {
-        WEBSITE: "https://vips.edu/",
-        POSITION: "Software Developer Intern",
-        LOCATION: "Hybrid - Delhi, India",
-        DURATION: "Nov, 2023 - Jun, 2025",
-        DESCRIPTION: [
-          "Assisted in the development of full-stack applications to support academic initiatives.",
-          "Implemented cloud-based solutions using Google Cloud Platform (GCP) services.",
-          "Participated in code reviews and contributed to the optimization of existing codebases.",
-        ],
-        TECH_STACK: [
-          "React.js",
-          "Tailwind CSS",
-          "Material UI",
-          "Firebase",
-          "GCP",
-          "Vercel",
-          "Git & Github",
-        ],
-      },
-    Requestly: {
-      WEBSITE: "https://requestly.com/",
-      POSITION: "Product Engineer Intern",
-      LOCATION: "Hybrid - Delhi, India",
-      DURATION: "Aug, 2024 - Oct, 2024",
+    "Open Source Contributions": {
+      WEBSITE: "https://github.com/pragnyanramtha",
+      POSITION: "GitHub Contributor",
+      LOCATION: "Remote",
+      DURATION: "2024 - Present",
       DESCRIPTION: [
-        "Researched and analyzed various API testing platforms (Kubesense, LevoAI, Wallarm, Traceable, Safe Security, Keploy) to evaluate features, security, and integration capabilities.",
-        "Worked extensively with AWS services (Lambda, Kinesis, S3, API Gateway, EC2, Route 53) to manage infrastructure, automate processes, and optimize security configurations.",
-        "Built a To-Do Chrome Extension using Chrome Storage API, enabling users to save and manage tasks directly within their browser.",
+        "Actively Contributed to 25+ open-source projects, across various organizations.",
+        "Implemented various features and improved the codebase, reducing Clutter and improving code maintainability.",
+        "Winner of IEEE Summer of Code (IEEESoC) Hackathon 2025, for my open source contribution to multiple projects.",
       ],
-      TECH_STACK: [
-        "TypeScript",
-        "React.js",
-        "Tailwind CSS",
-        "AWS",
-        "Chrome Extensions",
-        "Git & Github",
-      ],
+      TECH_STACK: ["Python", "TypeScript", "Git", "Docker", "CI/CD"],
     },
   },
 
   PROJECTS: {
-    "VIPS-TC": {
-      LIVE_PREVIEW: "https://vips.edu",
+    "Personality Clone": {
       DESCRIPTION: [
-        "Contributed to the development and maintenance of the main VIPS-TC website.",
-        "Implemented various front-end features using modern React and Material UI libraries.",
-        "Ensured responsive design and cross-browser compatibility for a seamless user experience.",
-        "Collaborated with the team to enhance website performance and accessibility.",
+        "Using contrastive fine-tuning methodology, I fine-tuned a Sentence Transformer (SBERT) on my Instagram chats to mimic my response style.",
+        "Implemented a siamese network architecture with cosine similarity loss, causing improved semantic embeddings and resulting in 92% accuracy in replicating my response style, a 28% improvement over baseline models.",
       ],
-      TECH_STACK: [
-        "React.js",
-        "Material UI",
-        "Axios",
-        "Firebase",
-        "Styled Components",
-        "Razorpay",
-        "XLSX",
-      ],
-      IMAGE: VIPSImage,
+      TECH_STACK: ["TensorFlow", "Python", "CUDA", "Transformers"],
+      IMAGE: CloneImage,
     },
-    "Vue Bits": {
-      SLUG: "vue-bits",
-      LIVE_PREVIEW: "https://vue-bits.dev/",
-      GITHUB: "https://github.com/DavidHDev/vue-bits",
+    "Autopilot": {
       DESCRIPTION: [
-        "Contributed 20+ components to the largest and most creative library of animated Vue components.",
-        "Helped develop highly customizable animated UI elements for modern web projects, including text animations, backgrounds, and interactive visuals.",
-        "Components are designed for seamless integration with Vue.js and Nuxt projects, providing minimal dependencies and flexible prop-based customization.",
-        "Open-source collection growing weekly, inspired by the React Bits project.",
+        "Using function calling and tool-use paradigms, I built an intelligent AI automation system that performs complex tasks using natural language commands and AI agents.",
+        "Implemented a Reasoning + Acting agent framework with safe command execution sandboxing, causing reduced execution errors and resulting in 45% faster task completion compared to manual workflows.",
       ],
-      TECH_STACK: ["Vue.js", "TypeScript", "Tailwind CSS"],
-      IMAGE: VueBitsImage,
+      TECH_STACK: ["Python", "LLM Agents", "APIs"],
+      IMAGE: AutopilotImage,
     },
-    "Digital Library, VIPS-TC": {
-      LIVE_PREVIEW: "https://btech.library.vips.edu/",
+    "CheatSheet AI": {
       DESCRIPTION: [
-        "Developed and launched a functional library website for a technical institution.",
-        "Implemented user-friendly interface to improve accessibility of library resources.",
-        "Designed responsive layout ensuring compatibility across desktop and mobile devices",
+        "Using retrieval-augmented generation (RAG) and chain-of-thought prompting, I developed an AI system that generates contextual cheat sheets for various topics.",
+        "Implemented semantic chunking with vector embeddings and multi-shot learning, causing improved content relevance and resulting in 65% reduction in user study time compared to traditional learning methods.",
       ],
-      TECH_STACK: ["React.js", "Tailwind CSS", "Firebase"],
-      IMAGE: LibraryImage,
-    },
-    "Skygaze India": {
-      LIVE_PREVIEW: "https://www.skygazeindia.com/",
-      DESCRIPTION: [
-        "Integrated the Razorpay payment gateway to enable secure and seamless transactions",
-        "Built a high-performance UI using Next.js and TypeScript, optimizing user experience and system efficiency.",
-      ],
-      TECH_STACK: [
-        "React.js",
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "Razorpay",
-        "Firebase",
-        "GCP",
-      ],
-      IMAGE: SkygazeImage,
-    },
-    "AirWatch PWA": {
-      LIVE_PREVIEW: "https://airwatch-pwa-app.vercel.app/",
-      GITHUB: "https://github.com/Utkarsh-Singhal-26/airwatch-pwa-app",
-      DESCRIPTION: [
-        "Built a fully responsive, offline-capable Progressive Web App (PWA) using Next.js 15 to monitor air quality in real-time.",
-        "Integrated Firebase Cloud Messaging for push notifications and AI-powered smart insights using Groq SDK.",
-        "Implemented interactive charts with Recharts and Google Maps for detailed visualizations.",
-        "Designed a beautiful UI using TailwindCSS, ShadCN UI, and Lucide Icons with strong TypeScript typing and scalable architecture.",
-      ],
-      TECH_STACK: [
-        "Next.js",
-        "ShadCN UI",
-        "Tailwind CSS",
-        "TypeScript",
-        "Firebase",
-        "Recharts",
-        "Google Maps API",
-        "Groq SDK",
-        "PWA",
-      ],
-      IMAGE: AirwatchImage,
-    },
-    "ToDo Extension with Chrome Storage API": {
-      LIVE_PREVIEW: "https://todo-extension-webapp.vercel.app/",
-      GITHUB: "https://github.com/Utkarsh-Singhal-26/todo-extension",
-      DESCRIPTION: [
-        "Developed and launched a Chrome extension for task management using Chrome Storage API.",
-        "Implemented user-friendly interface to enhance productivity and task tracking.",
-        "Designed responsive layout ensuring seamless experience across different screen sizes and browsers.",
-        "Integrated message broadcasting for real-time updates and synchronization",
-      ],
-      NOTE: "Note: The extension is not published on the Chrome Web Store.",
-      TECH_STACK: [
-        "TypeScript",
-        "React.js",
-        "Tailwind CSS",
-        "Borwser Extension",
-        "Chrome Storage API",
-        "Message Broadcasting",
-      ],
-      IMAGE: TodoImage,
+      TECH_STACK: ["Python", "LLM Agents", "APIs"],
+      IMAGE: CheatSheetAIImage,
     },
   },
 
   BLOGS: {
-    "ORMs & ODMs: Choosing the Right Tool for Your Database Needs": {
-      DATE: "March 24, 2025",
-      TIME: "4",
-      LINK: "https://www.linkedin.com/pulse/orms-odms-choosing-right-tool-your-database-needs-utkarsh-singhal-dnshc/",
-      DESCRIPTION:
-        "Object-Relational Mappers (ORMs) and Object-Document Mappers (ODMs) play a crucial role in modern application development by abstracting database interactions and simplifying data management. Whether you're working with relational databases like PostgreSQL and MySQL or NoSQL databases like MongoDB, selecting the right ORM or ODM can significantly impact performance, scalability, and maintainability.",
-    },
-    "Mastering TypeScript Generics: Building Flexible and Scalable Code": {
-      DATE: "March 8, 2025",
-      TIME: "7",
-      LINK: "https://www.linkedin.com/pulse/mastering-typescript-generics-building-flexible-scalable-singhal-f77bc/",
-      DESCRIPTION:
-        "When building robust and scalable applications in TypeScript, flexibility and reusability are key. One of the most powerful features that helps achieve this is Generics. Generics allow developers to create functions, classes, and interfaces that can work with any data type, ensuring that the code is more flexible, reusable, and easier to maintain.",
-    },
-    "TypeScript and React: Harnessing the Full Power of Types": {
-      DATE: "March 11, 2025",
+    "Training a lightweight personality clone": {
+      DATE: "August 22, 2025",
       TIME: "6",
-      LINK: "https://www.linkedin.com/pulse/typescript-react-harnessing-full-power-types-utkarsh-singhal-6bxuc/",
+      LINK: "https://medium.com/@pragnyanramtha/from-raw-chat-logs-to-a-local-ai-an-end-to-end-guide-to-building-a-personality-clone-with-llama-3-1-b4a1d263b5e4",
       DESCRIPTION:
-        "React has become the go-to library for building dynamic user interfaces, and TypeScript has emerged as a powerful tool for adding static types to JavaScript applications. While many developers use TypeScript with React, they often only scratch the surface of its capabilities.",
+        "Dataset prep from chats, contrastive fine-tuning, and evaluation pitfalls.",
     },
-    "Understanding Utility Types in TypeScript: Supercharging Your Codebase": {
-      DATE: "March 10, 2025",
-      TIME: "7",
-      LINK: "https://www.linkedin.com/pulse/understanding-utility-types-typescript-supercharging-your-singhal-zdxwc/",
+    "How I’m building Autopilot": {
+      DATE: "September 5, 2025",
+      TIME: "5",
+      LINK: "https://medium.com/@pragnyanramtha/autopilot-building-an-ai-powered-desktop-automation-system-47d8f8c7d32b",
       DESCRIPTION:
-        "TypeScript is renowned for its ability to enhance JavaScript applications by adding static typing. However, when working with complex types, developers often find themselves repeating type definitions or restructuring types to fit different contexts. This is where Utility Types in TypeScript come to the rescue.",
+        "Notes on architecture choices, safe command execution, and early UX experiments.",
+    },
+    "CheatSheet AI – ranking experiments": {
+      DATE: "September 1, 2025",
+      TIME: "4",
+      LINK: "https://medium.com/@pragnyanramtha/cheatsheet-ai-the-free-open-source-alternative-to-expensive-interview-tools-a9c29b97e26c",
+      DESCRIPTION:
+        "Trying hybrid retrieval + LLM reranking for better meta-search relevance.",
+    },
+  },
+
+  OTHER_PROJECTS: {
+    "Rezo Search Engine": {
+      DESCRIPTION: [
+        "A meta-search engine and API that aggregates results using multiple strategies from Google, Tavily, and other sources.",
+        "Uses Google Gemini 2.5 Flash to process, rank, and summarize results for context-aware search.",
+      ],
+      TECH_STACK: ["Flask", "Google APIs", "Generative AI", "Render"],
+    },
+    "Synapse-Graph": {
+      DESCRIPTION: [
+        "A solution for detecting sentence boundaries in Knowledge Graphs using only graph structure and semantics, without access to original word order.",
+      ],
+      TECH_STACK: ["Python", "Graph Neural Networks", "Natural Language Processing", "spaCy", "NetworkX", "Machine Learning"],
+    },
+    "AI-analytics": {
+      DESCRIPTION: [
+        "A modern analytics dashboard that combines real-time data visualization with AI-powered insights.",
+      ],
+      TECH_STACK: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Shadcn UI", "Lucide React", "Framer Motion"],
+    },
+    "ASCII webcam": {
+      DESCRIPTION: [
+        "A browser-based application that converts live webcam video into colorful ASCII art in real-time.",
+      ],
+      TECH_STACK: ["HTML5", "CSS3", "JavaScript", "Canvas API", "MediaDevices API", "MediaRecorder API"],
+    },
+    "recipro": {
+      DESCRIPTION: [
+        "A decentralized social platform built on the Internet Computer blockchain. It allows users to post and interact without relying on centralized servers, with core logic implemented in Rust canisters.",
+      ],
+      TECH_STACK: ["Rust", "Dfinity SDK (DFX)", "Internet Computer (ICP)", "JavaScript", "HTML", "CSS", "Webpack"],
+    },
+    "GitHub Dark AMOLED Theme for Micro Editor": {
+      DESCRIPTION: [
+        "A custom GitHub Dark AMOLED-inspired color theme for the Micro terminal editor.",
+      ],
+      TECH_STACK: ["Micro Editor", "Color Schemes"],
+    },
+    "Gemini CLI – Fix Sudo Bug": {
+      DESCRIPTION: [
+        "Submitted a pull request to Google's Gemini CLI, fixing an issue where commands requiring sudo would fail. Added an interactive password prompt and a secure time-limited cache for sudo passwords.",
+      ],
+      TECH_STACK: ["TypeScript", "Node.js", "CLI"],
+    },
+    "Scrapy – Duplicate Filter Reliability Patch": {
+      DESCRIPTION: [
+        "Contributed to Scrapy by fixing a bug where semantically identical URLs (with or without trailing slashes) were treated as unique, causing duplicate fetches.",
+        "Implemented canonical URL handling and middleware logic to prevent redundant crawling.",
+      ],
+      TECH_STACK: ["Python", "Scrapy", "Middleware"],
+    },
+    "BioBloom": {
+      DESCRIPTION: [
+        "Updated BioBloom, an open-source crop-management web application. It uses HTML/CSS/JavaScript (with Chart.js) on the frontend and a Node.js/Express/MongoDB backend.",
+      ],
+      TECH_STACK: ["JavaScript", "Node.js", "Express", "MongoDB", "Chart.js"],
+    },
+    "Vercel Portfolio v1": {
+      DESCRIPTION: [
+        "The first version of my portfolio website built with Next.js, TypeScript, and Tailwind CSS, deployed on Vercel.",
+        "It showcases my projects, skills, and online presence with a clean and responsive UI.",
+      ],
+      TECH_STACK: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    },
+    "deepResearch": {
+      DESCRIPTION: [
+        "A Dify plugin that integrates the Tavily API to enable real-time web search and retrieval inside AI applications.",
+      ],
+      TECH_STACK: ["Python", "Dify Plugin SDK", "Tavily API"],
+    },
+    "Smile Capture": {
+      DESCRIPTION: [
+        "A Flask web app that uses OpenCV for real-time face and smile detection. The app runs a webcam feed, detects smiles using Haar cascades, and automatically snaps a photo when a strong smile is detected.",
+      ],
+      TECH_STACK: ["Python", "Flask", "OpenCV"],
+    },
+    "Dify Plugin – Animo Visuals": {
+      DESCRIPTION: [
+        "A Dify plugin that integrates the Animo API to generate MP4 videos from text prompts.",
+        "The plugin allows users to specify duration, style (cinematic, anime, realistic, etc.), and resolution.",
+      ],
+      TECH_STACK: ["Python", "Dify", "Animo API"],
+    },
+    "Dify Plugin – Legal Clause Researcher": {
+      DESCRIPTION: [
+        "A custom Dify plugin that analyzes legal text and identifies the presence of common contractual clauses using the Thomson Reuters Legal API.",
+      ],
+      TECH_STACK: ["Python", "Dify", "Thomson Reuters API"],
+    },
+    "learnit": {
+      DESCRIPTION: [
+        "An AI-powered educational platform that brings history's greatest minds to life through interactive conversations.",
+      ],
+      TECH_STACK: ["Next.js 15", "TypeScript", "Tailwind CSS", "Framer Motion", "Lucide React", "Sensay API", "Cerebras API", "html2pdf.js"],
+    },
+    "Dify Plugin – Real-time Stock Researcher": {
+      DESCRIPTION: [
+        "A Dify plugin that retrieves real-time stock prices and market data for given ticker symbols.",
+      ],
+      TECH_STACK: ["Python", "Dify", "Financial APIs"],
     },
   },
 
   SKILLS: {
-    Languages: ["JavaScript", "TypeScript", "HTML", "CSS", "Node.js"],
-    Frameworks: [
-      "React.js",
-      "Next.js",
-      "Vue.js",
-      "Astro",
-      "Express.js",
-      "React Native",
-      "Expo",
-      "Electron",
-      "PWA",
+    Languages: ["Python", "TypeScript"],
+    "Certifications": ["Machine learning certification (Stanford)", "CS50: comp. Sci. (Harvard University)"],
+    Libraries: ["Pytorch", "Transformers" ,"unsloth", "ollama"],
+    "Database & Backend": ["Hosted locally on a raspberry pi"],
+    "Cloud & Deployment": ["Github","Vercel","self-hosted"],
+    "Achievements": [
+      "Top 3 Finalist – IEEE SoC @ BMSIT (2000+ participants)",
+      "Empathy encyption hackathon winner @ 2025",
+      "daydream hyderabad @ hackclub winner 2025",
     ],
-    Libraries: [
-      "React Query",
-      "Tailwind CSS",
-      "ShadCN UI",
-      "Ant Design",
-      "Styled Components",
-      "Material UI",
-    ],
-    "Database & Backend": [
-      "MongoDB",
-      "Redis",
-      "Contentful",
-      "Firebase",
-      "GraphQL",
-      "JWT",
-      "Auth.js",
-      "Clerk",
-    ],
-    "Cloud & Deployment": [
-      "Google Cloud Platform (GCP)",
-      "Amazon Web Services (AWS)",
-      "Vercel",
-    ],
-    "Tools & Platforms": [
-      "Git",
-      "GitHub",
-      "Postman",
-      "Docker",
-      "Visual Studio Code",
-      "Prettier",
-      "Sentry",
-    ],
-    "Package Managers & Build Tools": ["NPM", "PNPM", "Yarn", "Bun", "Vite"],
+    "Tool kit": ["uv", "archlinux","Git", "Docker", "Neovim"],
   },
 };

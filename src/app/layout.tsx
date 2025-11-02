@@ -12,21 +12,21 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Utkarsh Singhal | Software Developer",
+  title: "Pragnyan Ramtha | AI Research Scientist",
   description:
-    "Software developer specializing in Next.js, TypeScript and Node.js.",
+    "AI Research Scientist specializing in AI, Machine Learning, and Deep Learning.",
   openGraph: {
-    title: "Utkarsh Singhal | Software Developer",
+    title: "Pragnyan Ramtha | AI Research Scientist",
     description:
-      "Software developer specializing in Next.js, TypeScript, and Node.js. Experienced in building scalable, high-performance applications.",
-    url: "https://utkarsh-singhal.is-a.dev/",
+      "AI Research Scientist specializing in AI, Machine Learning, and Deep Learning.",
+    url: "https://pragnyanramtha.xyz/",
     type: "website",
     images: [
       {
-        url: "https://utkarsh-singhal.is-a.dev/opengraph-image.png",
+        url: "https://pragnyanramtha.xyz/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Utkarsh Singhal | Software Developer",
+        alt: "Pragnyan Ramtha | AI Research Scientist",
       },
     ],
   },
@@ -34,25 +34,17 @@ export const metadata: Metadata = {
     card: "summary_large_image",
   },
   authors: [
-    { name: "Utkarsh Singhal", url: "https://utkarsh-singhal.is-a.dev/" },
+    { name: "Pragnyan Ramtha", url: "https://pragnyanramtha.xyz/" },
   ],
   keywords: [
-    "Utkarsh Singhal",
+    "Pragnyan Ramtha",
     "Software Developer",
-    "Full-Stack Developer",
-    "React",
-    "Next.js",
-    "TypeScript",
-    "Node.js",
-    "AWS",
-    "GCP",
-    "MongoDB",
-    "Firebase",
-    "Tailwind CSS",
-    "Web Development",
+    "AI Research Scientist",
+    "Machine Learning",
+    "Deep Learning",
   ],
-  creator: "Utkarsh Singhal",
-  publisher: "Utkarsh Singhal",
+  creator: "Pragnyan Ramtha",
+  publisher: "Pragnyan Ramtha",
 };
 
 export default function RootLayout({
