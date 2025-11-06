@@ -44,18 +44,18 @@ export const DATA = {
       DESCRIPTION: [
         "Built an AI agent to handle customer support queries, reducing response times by 50% and improving customer satisfaction by 65%.",
         "Found insights in client data to improve the company's sales by 20%.",
-        "Built ai agents to increase efficiency and productivity of the company by 30%.",
+        "Engineered internal AI agents for data analysis and marketing automation to increase efficiency and productivity of the company by 30%.",
       ],
       TECH_STACK: ["Scikit-learn", "LLM Agents", "APIs", "Python"],
     },
-    "Open Source Contributions": {
+    "Various Open Source Projects": {
       WEBSITE: "https://github.com/pragnyanramtha",
-      POSITION: "GitHub Contributor",
+      POSITION: "Open Source Developer",
       LOCATION: "Remote",
       DURATION: "2024 - Present",
       DESCRIPTION: [
         "Actively Contributed to 25+ open-source projects, across various organizations.",
-        "Implemented various features and improved the codebase, reducing Clutter and improving code maintainability.",
+        "Refactored and enhanced the codebase to boost maintainability, achieving an 80% developer satisfaction rate.",
         "Winner of IEEE Summer of Code (IEEESoC) Hackathon 2025, for my open source contribution to multiple projects.",
       ],
       TECH_STACK: ["Python", "TypeScript", "Git", "Docker", "CI/CD"],
@@ -65,8 +65,8 @@ export const DATA = {
   PROJECTS: {
     "Personality Clone": {
       DESCRIPTION: [
-        "Using contrastive fine-tuning methodology, I fine-tuned a Sentence Transformer (SBERT) on my Instagram chats to mimic my response style.",
-        "Implemented a siamese network architecture with cosine similarity loss, causing improved semantic embeddings and resulting in 92% accuracy in replicating my response style, a 28% improvement over baseline models.",
+        "Using contrastive fine-tuning methodology, I fine-tuned a Sentence Transformer (SBERT) on private conversational data to mimic my response style.",
+        "Implemented a siamese network architecture with cosine similarity loss, which improved semantic embeddings and achieved 92% accuracy in replicating my response style, a 28% improvement over baseline models.",
       ],
       TECH_STACK: ["TensorFlow", "Python", "CUDA", "Transformers"],
       IMAGE: CloneImage,
@@ -74,7 +74,7 @@ export const DATA = {
     "Autopilot": {
       DESCRIPTION: [
         "Using function calling and tool-use paradigms, I built an intelligent AI automation system that performs complex tasks using natural language commands and AI agents.",
-        "Implemented a Reasoning + Acting agent framework with safe command execution sandboxing, causing reduced execution errors and resulting in 45% faster task completion compared to manual workflows.",
+        "Implemented a Reasoning + Acting agent framework with safe command execution sandboxing, reducing execution errors and achieving 45% faster task completion compared to manual workflows.",
       ],
       TECH_STACK: ["Python", "LLM Agents", "APIs"],
       IMAGE: AutopilotImage,
@@ -82,7 +82,7 @@ export const DATA = {
     "CheatSheet AI": {
       DESCRIPTION: [
         "Using retrieval-augmented generation (RAG) and chain-of-thought prompting, I developed an AI system that generates contextual cheat sheets for various topics.",
-        "Implemented semantic chunking with vector embeddings and multi-shot learning, causing improved content relevance and resulting in 65% reduction in user study time compared to traditional learning methods.",
+        "Implemented semantic chunking with vector embeddings and multi-shot learning, improving content relevance and achieving 65% reduction in user study time compared to traditional learning methods.",
       ],
       TECH_STACK: ["Python", "LLM Agents", "APIs"],
       IMAGE: CheatSheetAIImage,
@@ -219,13 +219,14 @@ export const DATA = {
   SKILLS: {
     Languages: ["Python", "TypeScript"],
     "Certifications": ["Machine learning certification (Stanford)", "CS50: comp. Sci. (Harvard University)"],
-    Libraries: ["Pytorch", "Transformers" ,"unsloth", "ollama"],
-    "Database & Backend": ["Hosted locally on a raspberry pi"],
-    "Cloud & Deployment": ["Github","Vercel","self-hosted"],
+    Libraries: ["Numpy","Pandas", "Matplotlib", "Scikit-learn", "Pytorch", "Transformers" ,"Unsloth", "Ollama"],
+    "Cloud & Deployment": ["Github","Vercel","self-hosting", "Google Cloud Platform"],
     "Achievements": [
-      "Top 3 Finalist – IEEE SoC @ BMSIT (2000+ participants)",
-      "Empathy encyption hackathon winner @ 2025",
-      "daydream hyderabad @ hackclub winner 2025",
+      "Winner, IEEE Summer of Code (IEEESOC) Hackathon 2025",
+      "Winner, Empathy Encryption Hackathon 2025",
+      "Winner, Daydream Hyderabad @ Hackclub 2025",
+      "Top 0.5% Finalist, Shell AI Hackathon 2025",
+
     ],
     "Tool kit": ["uv", "archlinux","Git", "Docker", "Neovim"],
   },
