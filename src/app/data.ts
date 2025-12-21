@@ -30,10 +30,10 @@ export const DATA = {
 
   ABOUT_ME: {
     INTRO:
-      "Hello! My name is Pragnyan and I enjoy creating things that make people go Damn! My interest in programming started back in 2020 when I decided to try editing custom Linux distros, turns out hacking together a custom OS taught me a lot about Linux and Programming!",
+      "AI Research Scientist specializing in LLM Optimization, Fine-Tuning (PEFT/QLoRA), and Agentic Workflows.",
     EXPERTISE:
-      "Fast-forward to today, I have worked as a Founding Engineer at Six Axis Studios. I’m focused on building projects, contributing to open source, and working on my skills. I also recently joined NIAT - MRV University and would love to network with students and alumni.",
-  },
+      "Shipped production-grade AI agents and scaled 25+ open-source repositories. Focused on turning deep AI research into high-performance, scalable reality."
+    },
 
   EXPERIENCE: {
     "Six Axis Studios": {
