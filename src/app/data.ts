@@ -17,7 +17,7 @@ export const DATA = {
     AGE: "17",
     PRONOUN: "he/him",
     HEADLINE:
-      "AI Research Scientist, building AGI, one project at a time.",
+      "AI Research Scientist, on a mission to make theoretical AI a reality.",
     RESUME: "/resumev4.pdf",
     EMAIL: "mailto:pragnyanramtha@gmail.com",
     GITHUB: "https://github.com/pragnyanramtha",

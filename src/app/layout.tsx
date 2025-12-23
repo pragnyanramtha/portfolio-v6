@@ -11,14 +11,31 @@ const outfit = Outfit({
   variable: "--font-outfit",
 });
 
+const metaDescription =
+  "AI Research Scientist specializing in AI, Machine Learning, and Deep Learning.";
+
+const metaKeywords = [
+  "Pragnyan Ramtha",
+  "AI Research Scientist",
+  "LLM Fine-tuning",
+  "RAG",
+  "PEFT QLoRA",
+  "High-Performance AI",
+  "Systems Engineer",
+  "Autonomous Agents",
+  "Machine Learning",
+  "Deep Learning",
+];
+
 export const metadata: Metadata = {
   title: "Pragnyan Ramtha | AI Research Scientist",
-  description:
-    "AI Research Scientist specializing in AI, Machine Learning, and Deep Learning.",
+  description: metaDescription,
+  icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
     title: "Pragnyan Ramtha | AI Research Scientist",
-    description:
-      "AI Research Scientist specializing in AI, Machine Learning, and Deep Learning.",
+    description: metaDescription,
     url: "https://pragnyanramtha.xyz/",
     type: "website",
     images: [
@@ -33,24 +50,12 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Pragnyan Ramtha | AI Research Scientist",
-    description:
-      "AI Research Scientist specializing in AI, Machine Learning, and Deep Learning.",
+    description: metaDescription,
   },
   authors: [
     { name: "Pragnyan Ramtha", url: "https://pragnyanramtha.xyz/" },
   ],
-  keywords: [
-    "Pragnyan Ramtha",
-    "AI Research Scientist",
-    "High-Performance AI",
-    "Systems Engineer",
-    "LLM Fine-tuning",
-    "PEFT QLoRA",
-    "RAG",
-    "Autonomous Agents",
-    "Machine Learning",
-    "Deep Learning",
-  ],
+  keywords: metaKeywords,
   creator: "Pragnyan Ramtha",
   publisher: "Pragnyan Ramtha",
 };
@@ -70,12 +75,17 @@ export default function RootLayout({
       "https://github.com/pragnyanramtha",
       "https://www.linkedin.com/in/pragnyanramtha",
     ],
-    description:
-      "AI Research Scientist specializing in AI, Machine Learning, and Deep Learning.",
+    description: metaDescription,
   };
 
   return (
     <html lang="en" className={`${outfit.variable}`} suppressHydrationWarning>
+      <head>
+        <meta name="description" content={metaDescription} />
+        <meta name="keywords" content={metaKeywords.join(", ")} />
+        <link rel="canonical" href="https://pragnyanramtha.xyz/" />
+        <meta name="author" content="Pragnyan Ramtha" />
+      </head>
       <body
         className={`${outfit.className} w-screen min-h-screen m-0 p-0 overflow-x-hidden`}
       >
