@@ -32,7 +32,7 @@ export function Blogs({ data }: { data: Record<string, IBlogData> }) {
                   className="flex items-center gap-1"
                   href={value.LINK}
                 >
-                  Read more <ArrowUpRight size={18} />
+                  Read “{key}” <ArrowUpRight size={18} />
                 </a>
                 <span className="px-1 py-px text-xs">
                   {value.TIME} min read

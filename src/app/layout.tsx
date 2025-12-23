@@ -32,14 +32,22 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    title: "Pragnyan Ramtha | AI Research Scientist",
+    description:
+      "AI Research Scientist specializing in AI, Machine Learning, and Deep Learning.",
   },
   authors: [
     { name: "Pragnyan Ramtha", url: "https://pragnyanramtha.xyz/" },
   ],
   keywords: [
     "Pragnyan Ramtha",
-    "Software Developer",
     "AI Research Scientist",
+    "High-Performance AI",
+    "Systems Engineer",
+    "LLM Fine-tuning",
+    "PEFT QLoRA",
+    "RAG",
+    "Autonomous Agents",
     "Machine Learning",
     "Deep Learning",
   ],
@@ -52,6 +60,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Pragnyan Ramtha",
+    url: "https://pragnyanramtha.xyz/",
+    jobTitle: "AI Research Scientist | AI, Machine Learning, and Deep Learning",
+    sameAs: [
+      "https://github.com/pragnyanramtha",
+      "https://www.linkedin.com/in/pragnyanramtha",
+    ],
+    description:
+      "AI Research Scientist specializing in AI, Machine Learning, and Deep Learning.",
+  };
+
   return (
     <html lang="en" className={`${outfit.variable}`} suppressHydrationWarning>
       <body
@@ -68,6 +90,11 @@ export default function RootLayout({
 
         <Analytics />
         <SpeedInsights />
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
       </body>
     </html>
   );

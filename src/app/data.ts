@@ -1,10 +1,6 @@
 import { StaticImageData } from "next/image";
 
-import {
-  AutopilotImage,
-  CheatSheetAIImage,
-  CloneImage,
-} from "@/assets";
+import { AutopilotImage, AimoImage, CheatSheetAIImage, CloneImage } from "@/assets";
 
 export interface IProjectData {
   LIVE_PREVIEW?: string;
@@ -21,8 +17,8 @@ export const DATA = {
     AGE: "17",
     PRONOUN: "he/him",
     HEADLINE:
-      "AI Research Scientist. I build things for fun and experiment with new technologies.",
-    RESUME: "/pragnyanrr-v3.pdf",
+      "AI Research Scientist, building AGI, one project at a time.",
+    RESUME: "/resumev4.pdf",
     EMAIL: "mailto:pragnyanramtha@gmail.com",
     GITHUB: "https://github.com/pragnyanramtha",
     LINKEDIN: "https://www.linkedin.com/in/pragnyanramtha",
@@ -30,23 +26,21 @@ export const DATA = {
 
   ABOUT_ME: {
     INTRO:
-      "AI Research Scientist specializing in LLM Optimization, Fine-Tuning (PEFT/QLoRA), and Agentic Workflows.",
-    EXPERTISE:
-      "Shipped production-grade AI agents and scaled 25+ open-source repositories. Focused on turning deep AI research into high-performance, scalable reality."
-    },
+      "I specialize in LLM fine-tuning, Machine Learning, and advanced pure mathematics. I ship production-grade AI agents and fuel 25+ open-source projects. I am currently focused on writing research papers that make theoretical AI a reality.",
+        },
 
   EXPERIENCE: {
-    "Six Axis Studios": {
-      WEBSITE: "https://6-axis-studios.vercel.app",
-      POSITION: "Founding Engineer",
+    "Reputation-DAO": {
+      WEBSITE: "https://reputationdao.com/",
+      POSITION: "AI Engineering Intern",
       LOCATION: "Remote",
-      DURATION: "May, 2025 - Aug, 2025",
+      DURATION: "Aug 2025 – Jan 2025",
       DESCRIPTION: [
-        "Built an AI agent to handle customer support queries, reducing response times by 50% and improving customer satisfaction by 65%.",
-        "Found insights in client data to improve the company's sales by 20%.",
-        "Engineered internal AI agents for data analysis and marketing automation to increase efficiency and productivity of the company by 30%.",
+        "Architected a GCP serverless backend achieving 99.9% uptime by leveraging Cloud Functions and Cloud Run for production-grade AI orchestration.",
+        "Reduced inference latency by 50% across support workflows by engineering a Gemini API response system with optimized prompt caching.",
+        "Boosted accuracy and trust by developing a RAG pipeline utilizing semantic search for real-time documentation retrieval and source attribution.",
       ],
-      TECH_STACK: ["Scikit-learn", "LLM Agents", "APIs", "Python"],
+      TECH_STACK: ["GCP", "Gemini API", "RAG", "Serverless", "Python"],
     },
     "Various Open Source Projects": {
       WEBSITE: "https://github.com/pragnyanramtha",
@@ -63,29 +57,32 @@ export const DATA = {
   },
 
   PROJECTS: {
-    "Personality Clone": {
+    "AIMO-3: Efficient Reasoning via LLM Fine-Tuning": {
+      NOTE: "Dec 2025",
       DESCRIPTION: [
-        "Using contrastive fine-tuning methodology, I fine-tuned a Sentence Transformer (SBERT) on private conversational data to mimic my response style.",
+        "Fine-tuned Phi-4 (14B) on CoT and TiR datasets to optimize multi-step problem solving and tool-use efficiency.",
+        "Achieved 90% accuracy on reasoning benchmarks, rivaling 70B parameter models while utilizing significantly fewer compute resources.",
+      ],
+      TECH_STACK: ["Phi-4", "Fine-tuning", "CoT/TiR", "PEFT"],
+      IMAGE: AimoImage,
+    },
+    "Personality Clone": {
+      NOTE: "Oct 2025",
+      DESCRIPTION: [
+        "Fine-tuned a Large Language model, leveraging PEFT (QLoRA) and contrastive learning on private conversational data to emulate personal response style.",
         "Implemented a siamese network architecture with cosine similarity loss, which improved semantic embeddings and achieved 92% accuracy in replicating my response style, a 28% improvement over baseline models.",
       ],
       TECH_STACK: ["TensorFlow", "Python", "CUDA", "Transformers"],
       IMAGE: CloneImage,
     },
     "Autopilot": {
+      NOTE: "Aug 2025",
       DESCRIPTION: [
-        "Using function calling and tool-use paradigms, I built an intelligent AI automation system that performs complex tasks using natural language commands and AI agents.",
-        "Implemented a Reasoning + Acting agent framework with safe command execution sandboxing, reducing execution errors and achieving 45% faster task completion compared to manual workflows.",
+        "Engineered an AI-driven OS automation system leveraging function calling and tool-use paradigms to execute complex natural language tasks to achieve low-level automation.",
+        "Built a Reasoning + Acting agent framework with command sandboxing, reducing execution errors and achieving 45% faster task completion than manual workflows.",
       ],
       TECH_STACK: ["Python", "LLM Agents", "APIs"],
       IMAGE: AutopilotImage,
-    },
-    "CheatSheet AI": {
-      DESCRIPTION: [
-        "Using retrieval-augmented generation (RAG) and chain-of-thought prompting, I developed an AI system that generates contextual cheat sheets for various topics.",
-        "Implemented semantic chunking with vector embeddings and multi-shot learning, improving content relevance and achieving 65% reduction in user study time compared to traditional learning methods.",
-      ],
-      TECH_STACK: ["Python", "LLM Agents", "APIs"],
-      IMAGE: CheatSheetAIImage,
     },
   },
 
@@ -120,6 +117,14 @@ export const DATA = {
         "Uses Google Gemini 2.5 Flash to process, rank, and summarize results for context-aware search.",
       ],
       TECH_STACK: ["Flask", "Google APIs", "Generative AI", "Render"],
+    },
+    "CheatSheet AI": {
+      DESCRIPTION: [
+        "Using retrieval-augmented generation (RAG) and chain-of-thought prompting, I developed an AI system that generates contextual cheat sheets for various topics.",
+        "Implemented semantic chunking with vector embeddings and multi-shot learning, improving content relevance and achieving 65% reduction in user study time compared to traditional learning methods.",
+      ],
+      TECH_STACK: ["Python", "LLM Agents", "APIs"],
+      IMAGE: CheatSheetAIImage,
     },
     "Synapse-Graph": {
       DESCRIPTION: [
@@ -217,17 +222,17 @@ export const DATA = {
   },
 
   SKILLS: {
-    Languages: ["Python", "TypeScript"],
+    Languages: ["Python", "TypeScript", "Bash", "C"],
     "Certifications": ["Machine learning certification (Stanford)", "CS50: comp. Sci. (Harvard University)"],
-    Libraries: ["Numpy","Pandas", "Matplotlib", "Scikit-learn", "Pytorch", "Transformers" ,"Unsloth", "Ollama"],
-    "Cloud & Deployment": ["Github","Vercel","self-hosting", "Google Cloud Platform"],
+    "AI/ML": ["PyTorch", "Transformers", "Unsloth", "Scikit-learn", "PEFT/QLoRA", "RAG"],
+    Infra: ["GCP", "Azure", "Docker", "Linux (Arch)", "Git"],
     "Achievements": [
       "Winner, IEEE Summer of Code (IEEESOC) Hackathon 2025",
       "Winner, Empathy Encryption Hackathon 2025",
       "Winner, Daydream Hyderabad @ Hackclub 2025",
       "Top 0.5% Finalist, Shell AI Hackathon 2025",
-
+      
     ],
-    "Tool kit": ["uv", "archlinux","Git", "Docker", "Neovim"],
+    "Tool kit": ["uv", "Neovim", "Arch Linux"],
   },
 };
