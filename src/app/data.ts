@@ -17,7 +17,7 @@ export const DATA = {
     AGE: "17",
     PRONOUN: "he/him",
     HEADLINE:
-      "AI Research Scientist, on a mission to make theoretical AI a reality.",
+      "AI Engineer - Building end‑to‑end LLM agents, automation systems, and production‑grade infrastructure",
     RESUME: "/resumev4.pdf",
     EMAIL: "mailto:pragnyanramtha@gmail.com",
     GITHUB: "https://github.com/pragnyanramtha",
@@ -26,7 +26,7 @@ export const DATA = {
 
   ABOUT_ME: {
     INTRO:
-      "I specialize in LLM fine-tuning, Machine Learning, and advanced pure mathematics. I ship production-grade AI agents and fuel 25+ open-source projects. I am currently focused on writing research papers that make theoretical AI a reality.",
+      "I design maintainable, production‑grade AI systems and can comfortably work with deep cloud infrastructure when needed. I learn new tools fast and use AI as a force‑multiplier in my coding, desigining, and research loops, which lets me move much faster while keeping systems reliable.",
         },
 
   EXPERIENCE: {

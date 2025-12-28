@@ -12,11 +12,11 @@ const outfit = Outfit({
 });
 
 const metaDescription =
-  "AI Research Scientist specializing in AI, Machine Learning, and Deep Learning.";
+  "AI Engineer specializing in AI, Machine Learning, and Deep Learning.";
 
 const metaKeywords = [
   "Pragnyan Ramtha",
-  "AI Research Scientist",
+  "AI Engineer",
   "LLM Fine-tuning",
   "RAG",
   "PEFT QLoRA",
@@ -28,13 +28,13 @@ const metaKeywords = [
 ];
 
 export const metadata: Metadata = {
-  title: "Pragnyan Ramtha | AI Research Scientist",
+  title: "Pragnyan Ramtha | AI Engineer",
   description: metaDescription,
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Pragnyan Ramtha | AI Research Scientist",
+    title: "Pragnyan Ramtha | AI Engineer",
     description: metaDescription,
     url: "https://pragnyanramtha.xyz/",
     type: "website",
@@ -43,13 +43,13 @@ export const metadata: Metadata = {
         url: "https://pragnyanramtha.xyz/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Pragnyan Ramtha | AI Research Scientist",
+        alt: "Pragnyan Ramtha | AI Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pragnyan Ramtha | AI Research Scientist",
+    title: "Pragnyan Ramtha | AI Engineer",
     description: metaDescription,
   },
   authors: [
@@ -70,7 +70,7 @@ export default function RootLayout({
     "@type": "Person",
     name: "Pragnyan Ramtha",
     url: "https://pragnyanramtha.xyz/",
-    jobTitle: "AI Research Scientist | AI, Machine Learning, and Deep Learning",
+    jobTitle: "AI Engineer | AI, Machine Learning, and Deep Learning",
     sameAs: [
       "https://github.com/pragnyanramtha",
       "https://www.linkedin.com/in/pragnyanramtha",
