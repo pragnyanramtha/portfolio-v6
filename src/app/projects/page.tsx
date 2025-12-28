@@ -13,6 +13,7 @@ interface IProjectData {
   IMAGE?: StaticImageData;
   LIVE_PREVIEW?: string;
   GITHUB?: string;
+  LINK?: string;
   DESCRIPTION: string[];
   NOTE?: string;
   TECH_STACK: string[];
@@ -54,64 +55,132 @@ export default function Page() {
 
           return (
             <React.Fragment key={key}>
-              <div className="items-start gap-12 grid lg:grid-cols-2 cursor-target">
-                <div className={`${isEven ? "lg:order-1" : "lg:order-2"}`}>
-                  <div className="relative rounded-lg overflow-hidden">
-                    <Image
-                      src={value.IMAGE || "/placeholder.svg"}
-                      alt={key}
-                      width={600}
-                      height={400}
-                      className="w-full h-80 object-cover"
-                    />
-                  </div>
-                </div>
-
-                <div
-                  className={`space-y-6 border-muted-foreground hover:border-primary border-l size-full transition-all duration-300 pl-4 ${isEven ? "lg:order-2" : "lg:order-1"}`}
+              {value.LINK ? (
+                <a
+                  href={value.LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="items-start gap-12 grid lg:grid-cols-2 cursor-target block"
                 >
-                  <div>
-                    <h2 className="mb-1 font-medium text-2xl">{key}</h2>
-
-                    <p className="flex items-center gap-1 text-sm">
-                      {value.LIVE_PREVIEW && (
-                        <a
-                          className="flex items-center gap-1"
-                          href={value.LIVE_PREVIEW}
-                        >
-                          live preview <ArrowUpRight size={18} />
-                        </a>
-                      )}
-                      {value.GITHUB && (
-                        <a
-                          className="flex items-center gap-1"
-                          href={value.GITHUB}
-                        >
-                          github <ArrowUpRight size={18} />
-                        </a>
-                      )}
-                    </p>
+                  <div className={`${isEven ? "lg:order-1" : "lg:order-2"}`}>
+                    <div className="relative rounded-lg overflow-hidden">
+                      <Image
+                        src={value.IMAGE || "/placeholder.svg"}
+                        alt={key}
+                        width={600}
+                        height={400}
+                        className="w-full h-80 object-cover"
+                      />
+                    </div>
                   </div>
-                  <ul className="space-y-1 mt-1 pl-3 text-muted-foreground text-sm text-justify list-disc">
-                    {value.DESCRIPTION.map((desc, index) => (
-                      <li key={index}>
-                        <span>{desc}</span>
-                      </li>
-                    ))}
-                  </ul>
 
-                  <ul className="flex flex-wrap items-center gap-2 mt-2 pl-3">
-                    {value.TECH_STACK.map((tech, index) => (
-                      <li
-                        key={index}
-                        className="bg-muted px-2 py-1 rounded text-xs"
-                      >
-                        {tech}
-                      </li>
-                    ))}
-                  </ul>
+                  <div
+                    className={`space-y-6 border-muted-foreground hover:border-primary border-l size-full transition-all duration-300 pl-4 ${isEven ? "lg:order-2" : "lg:order-1"}`}
+                  >
+                    <div>
+                      <h2 className="mb-1 font-medium text-2xl">{key}</h2>
+
+                      <p className="flex items-center gap-1 text-sm">
+                        {value.LIVE_PREVIEW && (
+                          <a
+                            className="flex items-center gap-1"
+                            href={value.LIVE_PREVIEW}
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            live preview <ArrowUpRight size={18} />
+                          </a>
+                        )}
+                        {value.GITHUB && (
+                          <a
+                            className="flex items-center gap-1"
+                            href={value.GITHUB}
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            github <ArrowUpRight size={18} />
+                          </a>
+                        )}
+                      </p>
+                    </div>
+                    <ul className="space-y-1 mt-1 pl-3 text-muted-foreground text-sm text-justify list-disc">
+                      {value.DESCRIPTION.map((desc, index) => (
+                        <li key={index}>
+                          <span>{desc}</span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    <ul className="flex flex-wrap items-center gap-2 mt-2 pl-3">
+                      {value.TECH_STACK.map((tech, index) => (
+                        <li
+                          key={index}
+                          className="bg-muted px-2 py-1 rounded text-xs"
+                        >
+                          {tech}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </a>
+              ) : (
+                <div className="items-start gap-12 grid lg:grid-cols-2 cursor-target">
+                  <div className={`${isEven ? "lg:order-1" : "lg:order-2"}`}>
+                    <div className="relative rounded-lg overflow-hidden">
+                      <Image
+                        src={value.IMAGE || "/placeholder.svg"}
+                        alt={key}
+                        width={600}
+                        height={400}
+                        className="w-full h-80 object-cover"
+                      />
+                    </div>
+                  </div>
+
+                  <div
+                    className={`space-y-6 border-muted-foreground hover:border-primary border-l size-full transition-all duration-300 pl-4 ${isEven ? "lg:order-2" : "lg:order-1"}`}
+                  >
+                    <div>
+                      <h2 className="mb-1 font-medium text-2xl">{key}</h2>
+
+                      <p className="flex items-center gap-1 text-sm">
+                        {value.LIVE_PREVIEW && (
+                          <a
+                            className="flex items-center gap-1"
+                            href={value.LIVE_PREVIEW}
+                          >
+                            live preview <ArrowUpRight size={18} />
+                          </a>
+                        )}
+                        {value.GITHUB && (
+                          <a
+                            className="flex items-center gap-1"
+                            href={value.GITHUB}
+                          >
+                            github <ArrowUpRight size={18} />
+                          </a>
+                        )}
+                      </p>
+                    </div>
+                    <ul className="space-y-1 mt-1 pl-3 text-muted-foreground text-sm text-justify list-disc">
+                      {value.DESCRIPTION.map((desc, index) => (
+                        <li key={index}>
+                          <span>{desc}</span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    <ul className="flex flex-wrap items-center gap-2 mt-2 pl-3">
+                      {value.TECH_STACK.map((tech, index) => (
+                        <li
+                          key={index}
+                          className="bg-muted px-2 py-1 rounded text-xs"
+                        >
+                          {tech}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-              </div>
+              )}
 
               {index < Object.entries(projectsData).length - 1 && (
                 <div className="border-muted-foreground/20 border-t" />

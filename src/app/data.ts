@@ -59,6 +59,7 @@ export const DATA = {
   PROJECTS: {
     "AIMO-3: Efficient Reasoning via LLM Fine-Tuning": {
       NOTE: "Dec 2025",
+      LINK: "https://huggingface.co/pragnyanramtha/phi-4-math-rplus",
       DESCRIPTION: [
         "Fine-tuned Phi-4 (14B) on CoT and TiR datasets to optimize multi-step problem solving and tool-use efficiency.",
         "Achieved 90% accuracy on reasoning benchmarks, rivaling 70B parameter models while utilizing significantly fewer compute resources.",
@@ -68,6 +69,7 @@ export const DATA = {
     },
     "Personality Clone": {
       NOTE: "Oct 2025",
+      LINK: "https://huggingface.co/pragnyanramtha/pragnyan-clone",
       DESCRIPTION: [
         "Fine-tuned a Large Language model, leveraging PEFT (QLoRA) and contrastive learning on private conversational data to emulate personal response style.",
         "Implemented a siamese network architecture with cosine similarity loss, which improved semantic embeddings and achieved 92% accuracy in replicating my response style, a 28% improvement over baseline models.",
@@ -77,6 +79,7 @@ export const DATA = {
     },
     "Autopilot": {
       NOTE: "Aug 2025",
+      LINK: "https://github.com/pragnyanramtha/autopilot",
       DESCRIPTION: [
         "Engineered an AI-driven OS automation system leveraging function calling and tool-use paradigms to execute complex natural language tasks to achieve low-level automation.",
         "Built a Reasoning + Acting agent framework with command sandboxing, reducing execution errors and achieving 45% faster task completion than manual workflows.",
