@@ -81,6 +81,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${outfit.variable}`} suppressHydrationWarning>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <meta name="description" content={metaDescription} />
         <meta name="keywords" content={metaKeywords.join(", ")} />
         <link rel="canonical" href="https://pragnyanramtha.xyz/" />
@@ -98,8 +100,12 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
 
-        <Analytics />
-        <SpeedInsights />
+        {process.env.NEXT_PUBLIC_VERCEL_ENV && (
+          <>
+            <Analytics />
+            <SpeedInsights />
+          </>
+        )}
         <script
           type="application/ld+json"
           suppressHydrationWarning
