@@ -17,6 +17,7 @@ const GridPattern = ({
       width="100%"
       height="100%"
       xmlns="http://www.w3.org/2000/svg"
+      suppressHydrationWarning
     >
       <defs>
         <pattern
@@ -30,6 +31,7 @@ const GridPattern = ({
             fill="none"
             stroke="currentColor"
             strokeWidth="0.5"
+            suppressHydrationWarning
           />
         </pattern>
       </defs>

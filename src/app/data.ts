@@ -17,8 +17,8 @@ export const DATA = {
     AGE: "17",
     PRONOUN: "he/him",
     HEADLINE:
-      "Results-driven AI Engineer specializing in Large Language Model (LLM) fine-tuning and end-to-end AI system design. Expertise in fine-tuning AI models using QLORA, serverless MLOps architecture (GCP/Azure), and engineering robust agentic frameworks for automation.",
-    RESUME: "/resumev4.pdf",
+      "AI Engineer - Specializing in LLM fine-tuning and AI system design",
+    RESUME: "/resumev5.pdf",
     EMAIL: "mailto:pragnyanramtha@gmail.com",
     GITHUB: "https://github.com/pragnyanramtha",
     LINKEDIN: "https://www.linkedin.com/in/pragnyanramtha",
@@ -26,7 +26,7 @@ export const DATA = {
 
   ABOUT_ME: {
     INTRO:
-      "Results-driven AI Engineer specializing in Large Language Model (LLM) fine-tuning and end-to-end AI system design. Proven ability to deliver significant performance gains. I design maintainable, production‑grade AI systems and can comfortably work with deep cloud infrastructure. I learn new tools fast and use AI as a force‑multiplier in my coding, designing, and research loops, which lets me move much faster while keeping systems reliable.",
+      "Results-driven AI Engineer specializing in Large Language Model (LLM) fine-tuning and AI system design. I design maintainable, production‑grade AI systems and can comfortably work with deep cloud infrastructure. I learn new tools fast and use AI as a force‑multiplier in my coding, designing, and research loops, which lets me move much faster while keeping systems reliable.",
   },
 
   EXPERIENCE: {
