@@ -17,7 +17,7 @@ export const DATA = {
     AGE: "17",
     PRONOUN: "he/him",
     HEADLINE:
-      "AI Engineer - Building end‑to‑end LLM agents, automation systems, and production‑grade infrastructure",
+      "Results-driven AI Engineer specializing in Large Language Model (LLM) fine-tuning and end-to-end AI system design. Expertise in fine-tuning AI models using QLORA, serverless MLOps architecture (GCP/Azure), and engineering robust agentic frameworks for automation.",
     RESUME: "/resumev4.pdf",
     EMAIL: "mailto:pragnyanramtha@gmail.com",
     GITHUB: "https://github.com/pragnyanramtha",
@@ -26,31 +26,31 @@ export const DATA = {
 
   ABOUT_ME: {
     INTRO:
-      "I design maintainable, production‑grade AI systems and can comfortably work with deep cloud infrastructure when needed. I learn new tools fast and use AI as a force‑multiplier in my coding, desigining, and research loops, which lets me move much faster while keeping systems reliable.",
-        },
+      "Results-driven AI Engineer specializing in Large Language Model (LLM) fine-tuning and end-to-end AI system design. Proven ability to deliver significant performance gains. I design maintainable, production‑grade AI systems and can comfortably work with deep cloud infrastructure. I learn new tools fast and use AI as a force‑multiplier in my coding, designing, and research loops, which lets me move much faster while keeping systems reliable.",
+  },
 
   EXPERIENCE: {
     "Reputation-DAO": {
       WEBSITE: "https://reputationdao.com/",
       POSITION: "AI Engineering Intern",
       LOCATION: "Remote",
-      DURATION: "Aug 2025 – Jan 2025",
+      DURATION: "Aug 2025 – Jan 2026",
       DESCRIPTION: [
-        "Architected a GCP serverless backend achieving 99.9% uptime by leveraging Cloud Functions and Cloud Run for production-grade AI orchestration.",
-        "Reduced inference latency by 50% across support workflows by engineering a Gemini API response system with optimized prompt caching.",
-        "Boosted accuracy and trust by developing a RAG pipeline utilizing semantic search for real-time documentation retrieval and source attribution.",
+        "Architected a high-availability serverless MLOps backend on GCP (Cloud Functions, Cloud Run) for production grade AI orchestration, achieving 99.9% uptime while successfully cutting down on cloud costs by 70%.",
+        "Engineered a Gemini API response system with optimized prompt caching, which significantly reduced API costs and delivered a 50% reduction in inference latency across critical workflows.",
+        "Boosted accuracy of customer support bot by developing a RAG pipeline utilizing semantic search for real-time documentation retrieval and source attribution.",
       ],
       TECH_STACK: ["GCP", "Gemini API", "RAG", "Serverless", "Python"],
     },
-    "Various Open Source Projects": {
+    "Open Source Contributions": {
       WEBSITE: "https://github.com/pragnyanramtha",
-      POSITION: "Open Source Developer",
+      POSITION: "Github Contributor",
       LOCATION: "Remote",
-      DURATION: "2024 - Present",
+      DURATION: "Jan 2025 – Present",
       DESCRIPTION: [
-        "Actively Contributed to 25+ open-source projects, across various organizations.",
-        "Refactored and enhanced the codebase to boost maintainability, achieving an 80% developer satisfaction rate.",
-        "Winner of IEEE Summer of Code (IEEESoC) Hackathon 2025, for my open source contribution to multiple projects.",
+        "Served as a key contributor to 30+ open-source projects, focusing on bug fixes and core feature development.",
+        "Identified a bottleneck in Scrapy causing severe latency, authored a fix that eliminated the drag and achieved a 2x speedup for affected workflows.",
+        "Winner of IEEE Summer of Code (IEEESoC) Hackathon 2025, for open source contributions to multiple projects.",
       ],
       TECH_STACK: ["Python", "TypeScript", "Git", "Docker", "CI/CD"],
     },
@@ -89,27 +89,37 @@ export const DATA = {
     },
   },
 
-  BLOGS: {
-    "Training a lightweight personality clone": {
-      DATE: "August 22, 2025",
-      TIME: "6",
-      LINK: "https://medium.com/@pragnyanramtha/from-raw-chat-logs-to-a-local-ai-an-end-to-end-guide-to-building-a-personality-clone-with-llama-3-1-b4a1d263b5e4",
+  RESEARCH_PAPERS: {
+    "Scaling Context Windows to Infinity: A Comprehensive Study of Position Encoding, Attention Mechanisms, Memory-Efficient Inference, and Context Reduction Techniques in Large Language Models": {
+      DATE: "2026",
+      VENUE: "Academia.edu",
+      LINK: "https://www.academia.edu/162466927/Scaling_Context_Windows_to_Infinity_A_Comprehensive_Study_of_Position_Encoding_Attention_Mechanisms_Memory_Efficient_Inference_and_Context_Reduction_Techniques_in_Large_Language_Models?source=swp_share",
       DESCRIPTION:
-        "Dataset prep from chats, contrastive fine-tuning, and evaluation pitfalls.",
+        "A comprehensive analysis of techniques for extending context windows in large language models, examining position encoding strategies, efficient attention mechanisms, and memory-optimized inference approaches to enable processing of arbitrarily long sequences.",
     },
-    "How I’m building Autopilot": {
-      DATE: "September 5, 2025",
-      TIME: "5",
-      LINK: "https://medium.com/@pragnyanramtha/autopilot-building-an-ai-powered-desktop-automation-system-47d8f8c7d32b",
+    "Unlocking Societal Trends in Aadhaar Enrolment and Updates: Anomaly Detection and Fraud Risk Prediction": {
+      DATE: "2026",
+      VENUE: "Academia.edu",
+      LINK: "https://www.academia.edu/162466949/Unlocking_Societal_Trends_in_Aadhaar_Enrolment_and_Updates_Anomaly_Detection_and_Fraud_Risk_Prediction_A_Data_Driven_Approach_to_Identify_Suspicious_Patterns?source=swp_share",
       DESCRIPTION:
-        "Notes on architecture choices, safe command execution, and early UX experiments.",
+        "A data-driven approach to identify suspicious patterns in India's Aadhaar biometric identification system, utilizing machine learning for anomaly detection and fraud risk prediction in enrollment and update processes.",
     },
-    "CheatSheet AI – ranking experiments": {
-      DATE: "September 1, 2025",
-      TIME: "4",
-      LINK: "https://medium.com/@pragnyanramtha/cheatsheet-ai-the-free-open-source-alternative-to-expensive-interview-tools-a9c29b97e26c",
+    "Speeding Up LLM Inference Using Quantum Computing Techniques": {
+      DATE: "2026",
+      VENUE: "Under Research",
+      LINK: "#",
       DESCRIPTION:
-        "Trying hybrid retrieval + LLM reranking for better meta-search relevance.",
+        "Exploring quantum-inspired algorithms and quantum computational primitives to accelerate inference in large language models, investigating quantum annealing for attention mechanisms and variational quantum circuits for efficient token generation.",
+    },
+  },
+
+  EDUCATION: {
+    "MRV UNIVERSITY": {
+      DEGREE: "Bachelor of Engineering - Computer Science and Design",
+      LOCATION: "Hyderabad, Telangana",
+      DURATION: "Expected June 2029",
+      GPA: "9.0/10",
+      HIGHLIGHT: "Top 3 academic rank",
     },
   },
 
@@ -225,17 +235,18 @@ export const DATA = {
   },
 
   SKILLS: {
-    Languages: ["Python", "TypeScript", "Bash", "C"],
+    Languages: ["Python", "C++", "Bash", "SQL", "TypeScript"],
+    "AI/ML Tools": ["PyTorch", "Transformers", "Unsloth", "NumPy", "Pandas", "Scikit-learn", "PEFT/QLoRA", "CUDA"],
+    Infrastructure: ["GCP", "Azure", "Docker", "Linux (Arch)", "Git"],
     "Certifications": ["Machine learning certification (Stanford)", "CS50: comp. Sci. (Harvard University)"],
-    "AI/ML": ["PyTorch", "Transformers", "Unsloth", "Scikit-learn", "PEFT/QLoRA", "RAG"],
-    Infra: ["GCP", "Azure", "Docker", "Linux (Arch)", "Git"],
     "Achievements": [
+      "Artificial Intelligence Mathematical Olympiad (AIMO) Silver Medalist",
+      "Authored 2 Research Papers on Modern AI Optimization Techniques",
       "Winner, IEEE Summer of Code (IEEESOC) Hackathon 2025",
       "Winner, Empathy Encryption Hackathon 2025",
       "Winner, Daydream Hyderabad @ Hackclub 2025",
       "Top 0.5% Finalist, Shell AI Hackathon 2025",
-      
     ],
-    "Tool kit": ["uv", "Neovim", "Arch Linux"],
+    "Developer Tools": ["uv", "Neovim", "Arch Linux"],
   },
 };

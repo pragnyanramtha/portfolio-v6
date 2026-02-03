@@ -3,7 +3,7 @@
 import { DATA } from "@/app/data";
 import {
   AboutMe,
-  Blogs,
+  ResearchPapers,
   Contact,
   Experience,
   Footer,
@@ -36,7 +36,7 @@ export default function Page() {
         <AboutMe data={DATA.ABOUT_ME} />
         <Experience data={DATA.EXPERIENCE} />
         <Projects data={DATA.PROJECTS} />
-        <Blogs data={DATA.BLOGS} />
+        <ResearchPapers data={DATA.RESEARCH_PAPERS} />
         <Skills data={DATA.SKILLS} />
         <Contact data={DATA.HEADER} />
         <Footer />
