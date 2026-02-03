@@ -128,3 +128,7 @@ span,
 li {
   transition: all 1s var(--elastic-out);
 }
+
+.cursor-default {
+  cursor: default !important;
+}

@@ -88,9 +88,11 @@ export default function RootLayout({
         <meta name="keywords" content={metaKeywords.join(", ")} />
         <link rel="canonical" href="https://pragnyanramtha.xyz/" />
         <meta name="author" content="Pragnyan Ramtha" />
+        <meta name="darkreader-lock" content="darkreader-inline-stroke darkreader-inline-fill" />
       </head>
       <body
         className={`${outfit.className} w-screen min-h-screen m-0 p-0 overflow-x-hidden`}
+        suppressHydrationWarning
       >
         <SuppressHydrationWarnings />
         <ThemeProvider

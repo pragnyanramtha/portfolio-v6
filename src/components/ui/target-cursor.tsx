@@ -94,7 +94,7 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
       const allTargets: Element[] = [];
       let current = directTarget;
       while (current && current !== document.body) {
-        if (current.matches(targetSelector)) {
+        if (current.matches(targetSelector) && !current.classList.contains('cursor-default')) {
           allTargets.push(current);
         }
         current = current.parentElement!;

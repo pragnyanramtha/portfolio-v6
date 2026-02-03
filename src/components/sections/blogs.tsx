@@ -16,7 +16,7 @@ export function ResearchPapers({ data }: { data: Record<string, IResearchPaperDa
 
       <ul className="flex flex-col gap-12 mt-4 font-normal text-primary/90 text-base">
         {Object.entries(data).map(([key, value]) => (
-          <li key={key} className="cursor-target">
+          <li key={key} className="cursor-target cursor-default">
             <div className="pl-4 border-muted-foreground hover:border-primary border-l size-full transition-all duration-300">
               <p className="text-primary/90 text-lg">
                 {key}{" "}

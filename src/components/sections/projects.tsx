@@ -19,109 +19,75 @@ export function Projects({ data }: { data: Record<string, IProjectData> }) {
         {Object.entries(data)
           .slice(0, 3)
           .map(([key, value]) => (
-            <li key={key} className="cursor-target">
-              {value.LINK ? (
-                <a
-                  href={value.LINK}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block"
-                >
-                  <div className="pl-4 border-muted-foreground hover:border-primary border-l size-full transition-all duration-300">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <p className="text-primary/90 text-lg">{key}</p>
+            <li key={key} className="cursor-target" suppressHydrationWarning>
+              <div className="pl-4 border-muted-foreground hover:border-primary border-l size-full transition-all duration-300">
+                <div className="flex sm:flex-row flex-col justify-between items-start">
+                  <div>
+                    <p className="text-primary/90 text-lg">
+                      {key}
+                    </p>
 
-                        <p className="flex items-center gap-1 text-sm">
-                          {value.LIVE_PREVIEW && (
-                            <a
-                              className="flex items-center gap-1"
-                              href={value.LIVE_PREVIEW}
-                              onClick={(e) => e.stopPropagation()}
-                            >
-                              live preview <ArrowUpRight size={18} />
-                            </a>
-                          )}
-                          {value.GITHUB && (
-                            <a
-                              className="flex items-center gap-1"
-                              href={value.GITHUB}
-                              onClick={(e) => e.stopPropagation()}
-                            >
-                              github <ArrowUpRight size={18} />
-                            </a>
-                          )}
-                        </p>
-                      </div>
-                    </div>
+                    <div className="flex items-center gap-3 text-sm mt-1">
+                      {value.LINK && !value.LIVE_PREVIEW && !value.GITHUB && (
+                        <div className="flex items-center">
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-1"
+                            href={value.LINK}
+                          >
+                            View Project <ArrowUpRight size={18} />
+                          </a>
+                        </div>
+                      )}
 
-                    <ul className="space-y-1 mt-1 pl-3 text-muted-foreground text-sm text-justify list-disc">
-                      {value.DESCRIPTION.map((desc, index) => (
-                        <li key={index}>
-                          <span>{desc}</span>
-                        </li>
-                      ))}
-                    </ul>
+                      {value.LINK && (value.LIVE_PREVIEW || value.GITHUB) && (
+                        null
+                      )}
 
-                    <ul className="flex flex-wrap items-center gap-2 mt-2 pl-3">
-                      {value.TECH_STACK.map((tech, index) => (
-                        <li
-                          key={index}
-                          className="bg-muted px-2 py-1 rounded text-xs"
+                      {value.LIVE_PREVIEW && (
+                        <a
+                          className="flex items-center gap-1"
+                          href={value.LIVE_PREVIEW}
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
-                          {tech}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </a>
-              ) : (
-                <div className="pl-4 border-muted-foreground hover:border-primary border-l size-full transition-all duration-300">
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <p className="text-primary/90 text-lg">{key}</p>
-
-                      <p className="flex items-center gap-1 text-sm">
-                        {value.LIVE_PREVIEW && (
-                          <a
-                            className="flex items-center gap-1"
-                            href={value.LIVE_PREVIEW}
-                          >
-                            live preview <ArrowUpRight size={18} />
-                          </a>
-                        )}
-                        {value.GITHUB && (
-                          <a
-                            className="flex items-center gap-1"
-                            href={value.GITHUB}
-                          >
-                            github <ArrowUpRight size={18} />
-                          </a>
-                        )}
-                      </p>
+                          live preview <ArrowUpRight size={18} />
+                        </a>
+                      )}
+                      {value.GITHUB && (
+                        <a
+                          className="flex items-center gap-1"
+                          href={value.GITHUB}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          github <ArrowUpRight size={18} />
+                        </a>
+                      )}
                     </div>
                   </div>
-
-                  <ul className="space-y-1 mt-1 pl-3 text-muted-foreground text-sm text-justify list-disc">
-                    {value.DESCRIPTION.map((desc, index) => (
-                      <li key={index}>
-                        <span>{desc}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <ul className="flex flex-wrap items-center gap-2 mt-2 pl-3">
-                    {value.TECH_STACK.map((tech, index) => (
-                      <li
-                        key={index}
-                        className="bg-muted px-2 py-1 rounded text-xs"
-                      >
-                        {tech}
-                      </li>
-                    ))}
-                  </ul>
                 </div>
-              )}
+
+                <ul className="space-y-1 mt-1 pl-3 text-muted-foreground text-sm text-justify list-disc">
+                  {value.DESCRIPTION.map((desc, index) => (
+                    <li key={index}>
+                      <span>{desc}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <ul className="flex flex-wrap items-center gap-2 mt-2 pl-3">
+                  {value.TECH_STACK.map((tech, index) => (
+                    <li
+                      key={index}
+                      className="bg-muted px-2 py-1 rounded text-xs"
+                    >
+                      {tech}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </li>
           ))}
       </ul>
@@ -134,6 +100,6 @@ export function Projects({ data }: { data: Record<string, IProjectData> }) {
           View all projects
         </Link>
       </div>
-    </div>
+    </div >
   );
 }
