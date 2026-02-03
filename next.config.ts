@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Enable React strict mode
+  reactStrictMode: true,
+
   // Enable compression for better performance
   compress: true,
 
