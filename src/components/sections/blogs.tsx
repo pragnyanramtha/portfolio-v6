@@ -1,17 +1,17 @@
 import { ArrowUpRight } from "lucide-react";
 
-interface IBlogData {
+interface IResearchPaperData {
   DATE: string;
-  TIME: string;
+  VENUE?: string;
   LINK: string;
   DESCRIPTION: string;
 }
 
-export function Blogs({ data }: { data: Record<string, IBlogData> }) {
+export function ResearchPapers({ data }: { data: Record<string, IResearchPaperData> }) {
   return (
-    <div id="blogs" className="py-10">
+    <div id="research-papers" className="py-10">
       <h2 className="font-medium text-primary/90 text-base">
-        technical blogs.
+        research papers.
       </h2>
 
       <ul className="flex flex-col gap-12 mt-4 font-normal text-primary/90 text-base">
@@ -32,11 +32,13 @@ export function Blogs({ data }: { data: Record<string, IBlogData> }) {
                   className="flex items-center gap-1"
                   href={value.LINK}
                 >
-                  Read “{key}” <ArrowUpRight size={18} />
+                  Read paper <ArrowUpRight size={18} />
                 </a>
-                <span className="px-1 py-px text-xs">
-                  {value.TIME} min read
-                </span>
+                {value.VENUE && (
+                  <span className="px-1 py-px text-xs">
+                    {value.VENUE}
+                  </span>
+                )}
               </p>
 
               <p className="mt-1 text-muted-foreground text-sm text-justify line-clamp-3">

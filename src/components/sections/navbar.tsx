@@ -39,7 +39,7 @@ export function Navbar() {
 
       <nav className="flex items-center gap-2">
         <ul className="flex items-center gap-2 sm:gap-0">
-          {["experience", "projects", "blogs"].map((link, index) => (
+          {["experience", "projects", "research-papers"].map((link, index) => (
             <li key={index}>
               <AnimatedText href={`/#${link}`}>{link}</AnimatedText>
             </li>
@@ -50,9 +50,8 @@ export function Navbar() {
           <MovingElement
             className="p-[10px] rounded-full"
             change={toggleTheme}
-            ariaLabel={`Switch to ${
-              resolvedTheme === "dark" ? "light" : "dark"
-            } mode`}
+            ariaLabel={`Switch to ${resolvedTheme === "dark" ? "light" : "dark"
+              } mode`}
           >
             {resolvedTheme === "dark" ? <Moon /> : <Sun />}
           </MovingElement>
