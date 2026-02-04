@@ -9,7 +9,7 @@ interface IResearchPaperData {
 
 export function ResearchPapers({ data }: { data: Record<string, IResearchPaperData> }) {
   return (
-    <div id="research-papers" className="py-10">
+    <div id="research" className="py-10">
       <h2 className="font-medium text-primary/90 text-base">
         research papers.
       </h2>

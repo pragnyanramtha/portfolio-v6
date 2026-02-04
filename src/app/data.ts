@@ -62,7 +62,7 @@ export const DATA = {
       LINK: "https://huggingface.co/pragnyanramtha/phi-4-math-rplus",
       DESCRIPTION: [
         "Fine-tuned Phi-4 (14B) on CoT and TiR datasets to optimize multi-step problem solving and tool-use efficiency.",
-        "Achieved 90% accuracy on reasoning benchmarks, rivaling 70B parameter models while utilizing significantly fewer compute resources.",
+        "Achieved 90% accuracy on reasoning benchmarks, rivaling 125B parameter models while utilizing significantly fewer compute resources.",
       ],
       TECH_STACK: ["Phi-4", "Fine-tuning", "CoT/TiR", "PEFT"],
       IMAGE: AimoImage,
