@@ -17,7 +17,7 @@ export const DATA = {
     AGE: "17",
     PRONOUN: "he/him",
     HEADLINE:
-      "AI Engineer - Specializing in LLM fine-tuning and AI system design",
+      "AI/ML Engineer - Specializing in LLM fine-tuning and AI system design",
     RESUME: "/resumev5.pdf",
     EMAIL: "mailto:pragnyanramtha@gmail.com",
     GITHUB: "https://github.com/pragnyanramtha",
@@ -26,7 +26,7 @@ export const DATA = {
 
   ABOUT_ME: {
     INTRO:
-      "Results-driven AI Engineer specializing in Large Language Model (LLM) fine-tuning and AI system design. I design maintainable, production‑grade AI systems and can comfortably work with deep cloud infrastructure. I learn new tools fast and use AI as a force‑multiplier in my coding, designing, and research loops, which lets me move much faster while keeping systems reliable.",
+      "Results-driven AI/ML Engineer specializing in Large Language Model (LLM) fine-tuning and AI system design. I design maintainable, production‑grade AI systems and can comfortably work with deep cloud infrastructure. I learn new tools fast and use AI as a force‑multiplier in my coding, designing, and research loops, which lets me move much faster while keeping systems reliable.",
   },
 
   EXPERIENCE: {
