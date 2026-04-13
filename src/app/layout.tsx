@@ -5,8 +5,6 @@ import { ThemeProvider } from "next-themes";
 import { Outfit } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-
-
 const outfit = Outfit({
   subsets: ["latin"],
   display: "swap",
@@ -54,9 +52,7 @@ export const metadata: Metadata = {
     title: "Pragnyan Ramtha | AI Engineer",
     description: metaDescription,
   },
-  authors: [
-    { name: "Pragnyan Ramtha", url: "https://pragnyanramtha.xyz/" },
-  ],
+  authors: [{ name: "Pragnyan Ramtha", url: "https://pragnyanramtha.xyz/" }],
   keywords: metaKeywords,
   creator: "Pragnyan Ramtha",
   publisher: "Pragnyan Ramtha",
@@ -84,18 +80,24 @@ export default function RootLayout({
     <html lang="en" className={`${outfit.variable}`} suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <meta name="description" content={metaDescription} />
         <meta name="keywords" content={metaKeywords.join(", ")} />
         <link rel="canonical" href="https://pragnyanramtha.xyz/" />
         <meta name="author" content="Pragnyan Ramtha" />
-        <meta name="darkreader-lock" content="darkreader-inline-stroke darkreader-inline-fill" />
+        <meta
+          name="darkreader-lock"
+          content="darkreader-inline-stroke darkreader-inline-fill"
+        />
       </head>
       <body
         className={`${outfit.className} w-screen min-h-screen m-0 p-0 overflow-x-hidden`}
         suppressHydrationWarning
       >
-
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

@@ -1,4 +1,3 @@
-import ContributionGraph from "./contribution-graph";
 
 export function AboutMe({ data }: { data: Record<string, string> }) {
   return (
@@ -14,7 +13,6 @@ export function AboutMe({ data }: { data: Record<string, string> }) {
         {/* <span>{data.BLOG}</span> */}
       </p>
       
-      <ContributionGraph />
     </div>
   );
 }

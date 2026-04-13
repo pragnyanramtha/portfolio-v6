@@ -3,6 +3,7 @@
 import { DATA } from "@/app/data";
 import {
   AboutMe,
+  Blogs,
   ResearchPapers,
   Contact,
   Experience,
@@ -12,6 +13,7 @@ import {
   Projects,
   Skills,
 } from "@/components/sections";
+import { GitHubContributions } from "@/components/sections/github-contribution";
 import GridPattern from "@/components/ui/grid-pattern";
 import TargetCursor from "@/components/ui/target-cursor";
 import useMobileDetection from "@/hooks/use-mobile";
@@ -36,6 +38,8 @@ export default function Page() {
         <AboutMe data={DATA.ABOUT_ME} />
         <Experience data={DATA.EXPERIENCE} />
         <Projects data={DATA.PROJECTS} />
+        <Blogs data={DATA.BLOGS} />
+        <GitHubContributions />
         <ResearchPapers data={DATA.RESEARCH_PAPERS} />
         <Skills data={DATA.SKILLS} />
         <Contact data={DATA.HEADER} />

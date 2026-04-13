@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "skills": {
+    "Portfolio Case Study Writer": {
+      "source": "paramchoudhary/resumeskills",
+      "sourceType": "github",
+      "computedHash": "a7e523d4f31e5e7240f198521f82f0202939830f673933e030ca9dfc2963fd44"
+    },
+    "interactive-portfolio": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "computedHash": "9a6772db1b4f03f5039f0148b91c9c40ea56baa49276dacc91355853086a8050"
+    }
+  }
+}
