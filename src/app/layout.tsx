@@ -4,7 +4,8 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import SuppressHydrationWarnings from "@/components/suppress-hydration-warnings";
+import Script from "next/script";
+
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -94,7 +95,7 @@ export default function RootLayout({
         className={`${outfit.className} w-screen min-h-screen m-0 p-0 overflow-x-hidden`}
         suppressHydrationWarning
       >
-        <SuppressHydrationWarnings />
+
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -110,9 +111,9 @@ export default function RootLayout({
             <SpeedInsights />
           </>
         )}
-        <script
+        <Script
+          id="structured-data"
           type="application/ld+json"
-          suppressHydrationWarning
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
       </body>
