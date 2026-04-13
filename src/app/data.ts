@@ -36,7 +36,7 @@ export const DATA = {
     AGE: "17",
     PRONOUN: "he/him",
     HEADLINE:
-      "AI/ML Engineer - Specializing in LLM fine-tuning and AI system design",
+      "AI/ML Engineer specializing in Cost-Efficient Reasoning Systems & LLM Fine-Tuning. Medalist @ AIMO3.",
     RESUME: "/resumev5.pdf",
     EMAIL: "mailto:pragnyanramtha@gmail.com",
     GITHUB: "https://github.com/pragnyanramtha",
@@ -55,8 +55,8 @@ export const DATA = {
       LOCATION: "Remote",
       DURATION: "Aug 2025 – Jan 2026",
       DESCRIPTION: [
-        "Architected a high-availability serverless MLOps backend on GCP (Cloud Functions, Cloud Run) for production grade AI orchestration, achieving 99.9% uptime while successfully cutting down on cloud costs by 70%.",
-        "Engineered a Gemini API response system with optimized prompt caching, which significantly reduced API costs and delivered a 50% reduction in inference latency across critical workflows.",
+        "Architected a high-availability serverless MLOps backend on GCP (Cloud Functions, Cloud Run) for production grade AI orchestration, achieving **99.9% uptime** while successfully **cutting down on cloud costs by 70%**.",
+        "Engineered a Gemini API response system with optimized prompt caching, which significantly reduced API costs and delivered a **50% reduction in inference latency** across critical workflows.",
         "Boosted accuracy of customer support bot by developing a RAG pipeline utilizing semantic search for real-time documentation retrieval and source attribution.",
       ],
       TECH_STACK: ["GCP", "Gemini API", "RAG", "Serverless", "Python"],
@@ -68,7 +68,7 @@ export const DATA = {
       DURATION: "Jan 2025 – Present",
       DESCRIPTION: [
         "Served as a key contributor to 30+ open-source projects, focusing on bug fixes and core feature development.",
-        "Identified a bottleneck in Scrapy causing severe latency, authored a fix that eliminated the drag and achieved a 2x speedup for affected workflows.",
+        "Identified a bottleneck in Scrapy causing severe latency, authored a fix that eliminated the drag and achieved a **2x speedup** for affected workflows.",
         "Winner of IEEE Summer of Code (IEEESoC) Hackathon 2025, for open source contributions to multiple projects.",
       ],
       TECH_STACK: ["Python", "TypeScript", "Git", "Docker", "CI/CD"],
@@ -81,7 +81,7 @@ export const DATA = {
       LINK: "https://huggingface.co/pragnyanramtha/phi-4-math-rplus",
       DESCRIPTION: [
         "Fine-tuned Phi-4 (14B) on CoT and TiR datasets to optimize multi-step problem solving and tool-use efficiency.",
-        "Achieved 90% accuracy on reasoning benchmarks, rivaling 125B parameter models while utilizing significantly fewer compute resources.",
+        "Achieved **90% accuracy** on reasoning benchmarks, rivaling 125B parameter models while utilizing significantly fewer compute resources.",
       ],
       TECH_STACK: ["Phi-4", "Fine-tuning", "CoT/TiR", "PEFT"],
       IMAGE: AimoImage,
@@ -91,7 +91,7 @@ export const DATA = {
       LINK: "https://huggingface.co/pragnyanramtha/pragnyan-clone",
       DESCRIPTION: [
         "Fine-tuned a Large Language model, leveraging PEFT (QLoRA) and contrastive learning on private conversational data to emulate personal response style.",
-        "Implemented a siamese network architecture with cosine similarity loss, which improved semantic embeddings and achieved 92% accuracy in replicating my response style, a 28% improvement over baseline models.",
+        "Implemented a siamese network architecture with cosine similarity loss, which improved semantic embeddings and achieved **92% accuracy** in replicating my response style, a **28% improvement** over baseline models.",
       ],
       TECH_STACK: ["TensorFlow", "Python", "CUDA", "Transformers"],
       IMAGE: CloneImage,
@@ -101,7 +101,7 @@ export const DATA = {
       LINK: "https://github.com/pragnyanramtha/autopilot",
       DESCRIPTION: [
         "Engineered an AI-driven OS automation system leveraging function calling and tool-use paradigms to execute complex natural language tasks to achieve low-level automation.",
-        "Built a Reasoning + Acting agent framework with command sandboxing, reducing execution errors and achieving 45% faster task completion than manual workflows.",
+        "Built a Reasoning + Acting agent framework with command sandboxing, reducing execution errors and achieving **45% faster task completion** than manual workflows.",
       ],
       TECH_STACK: ["Python", "LLM Agents", "APIs"],
       IMAGE: AutopilotImage,

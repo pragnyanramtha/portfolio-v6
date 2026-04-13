@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { renderBoldText } from "@/lib/render-text";
 
 interface IExperienceData {
   WEBSITE: string;
@@ -50,7 +51,7 @@ export function Experience({
               <ul className="space-y-1 mt-1 pl-3 text-muted-foreground text-sm text-justify list-disc">
                 {value.DESCRIPTION.map((desc, index) => (
                   <li key={index}>
-                    <span>{desc}</span>
+                    <span>{renderBoldText(desc)}</span>
                   </li>
                 ))}
               </ul>

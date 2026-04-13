@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import { renderBoldText } from "@/lib/render-text";
 
 interface IProjectData {
   LIVE_PREVIEW?: string;
@@ -41,8 +42,15 @@ export function Projects({ data }: { data: Record<string, IProjectData> }) {
                         </div>
                       )}
 
-                      {value.LINK && (value.LIVE_PREVIEW || value.GITHUB) && (
-                        null
+                      {value.LINK && (value.LIVE_PREVIEW || value.GITHUB) && key.includes("AIMO") && (
+                        <div className="flex items-center">
+                          <Link
+                            href="/blogs/how-i-won-a-solver-medal-at-aimo3"
+                            className="flex items-center gap-1 text-primary hover:text-primary/80 transition-colors"
+                          >
+                            Read Case Study <ArrowUpRight size={18} />
+                          </Link>
+                        </div>
                       )}
 
                       {value.LIVE_PREVIEW && (
@@ -72,7 +80,7 @@ export function Projects({ data }: { data: Record<string, IProjectData> }) {
                 <ul className="space-y-1 mt-1 pl-3 text-muted-foreground text-sm text-justify list-disc">
                   {value.DESCRIPTION.map((desc, index) => (
                     <li key={index}>
-                      <span>{desc}</span>
+                      <span>{renderBoldText(desc)}</span>
                     </li>
                   ))}
                 </ul>
