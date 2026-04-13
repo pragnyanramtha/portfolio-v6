@@ -1,0 +1,35 @@
+# Pragnyan Ramtha | AI/ML Engineer Full Context
+
+AI/ML Engineer specializing in Cost-Efficient Reasoning Systems, LLM Fine-Tuning (PEFT/QLoRA), and extreme model compression (GPTQ/Mixed-Precision). AIMO3 Solver Medalist and ARC-AGI Top Ranker.
+
+## Contact
+- GitHub: https://github.com/pragnyanramtha
+- LinkedIn: https://www.linkedin.com/in/pragnyanramtha
+- Professional Resume: /resumev5.pdf
+- Site Index: /index.md
+
+## Technical Focus Areas
+- **Reasoning Frameworks:** Agentic loops with parallel tool-use, BFS/DFS decoders, and consensus-based voting.
+- **Model Efficiency:** Mixed-precision quantization (Int6), Cross-Sparse Attention (XSA), and EMA weight smoothing.
+- **Test-Time Adaptation:** Test-Time Training (TTT) strategies for solving novel abstract puzzles (ARC-AGI).
+- **MLOps:** High-availability serverless backends on GCP with aggressive cost-cutting logic.
+
+## Key Projects & Achievements
+- **AIMO-3 Medalist:** Fine-tuned 14B models to 90% reasoning accuracy using specialized CoT/TiR datasets.
+- **OpenAI Parameter Golf (Top 5):** Achieved 1.1271 BPB on FineWeb using XSA4 + EMA + GPTQ-Int6 stack.
+- **ARC-AGI-2 (#1 Rank):** Adaptation of budget-aware solving patterns for fluid intelligence benchmarks.
+- **Scrapy Contributor:** Authored core speedup patches for URL duplicate filtering.
+
+## Blog Summaries
+- **Fine-Tuning Reasoning:** Insights on data quality over quantity and benchmark hygiene.
+- **LLM Latency:** Systems-level approach to breaking latency budgets across retrieval and inference.
+- **Parameter Golf:** Technical breakdown of architectural density vs. compression.
+
+## Skills Technical Stack
+- languages: [Python, C++, TypeScript, Bash, SQL]
+- libraries: [PyTorch, Transformers, Unsloth, PEFT, CUDA, NumPy, Scrapy]
+- infrastructure: [GCP, Cloud Run, Docker, Linux Arch, Git, CI/CD]
+
+## Education
+- B.E. Computer Science & Design, MRV University (GPA 9.0/10).
+- Deep Learning & ML Certifications from Stanford & Harvard.
