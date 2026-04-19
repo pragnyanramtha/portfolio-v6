@@ -386,25 +386,83 @@ export const DATA = {
       ],
       TOPICS: ["Fine-tuning", "Reasoning", "PEFT", "Evaluation"],
     },
+    "I Spent a Week Trying to Clone Myself With AI. Here's Every Time It Broke.": {
+      SLUG: "i-spent-a-week-trying-to-clone-myself-with-ai",
+      DATE: "Nov 2025",
+      READ_TIME: "7 min read",
+      DESCRIPTION: [
+        "The honest story of building a fine-tuned Llama 3.1 personality clone from raw chat logs — told through every moment it fell apart, and what kept me going.",
+        "Not a tutorial. Not a highlight reel. Just the real week.",
+      ],
+      INTRO: [
+        "It started with a dumb question I asked myself at 1am: what if I fine-tuned a model on my own chat history? Not generic assistant-mode — actually me. My slang, my weird tangents, my energy.",
+        "I gave myself a week. I had a GPU, a pile of messy chat logs, and absolutely no idea how many times this was going to fall apart before it worked.",
+      ],
+      CONTENT: [
+        {
+          HEADING: "I thought the hard part was training",
+          PARAGRAPHS: [
+            "It wasn't. The hard part was the hours before training even started — sitting with thousands of raw messages that looked nothing like what a model expects. I had to clean, restructure, and reformat everything by hand before a single training step could run. By the time the data was actually ready, it didn't feel like progress. It felt like I'd just finished the pre-work before the real work could begin.",
+            "That was the first lesson: the thing you think is the project is almost never the actual project. The real work is always one layer deeper than where you started.",
+          ],
+        },
+        {
+          HEADING: "The first time it broke, I didn't even know what I was looking at",
+          PARAGRAPHS: [
+            "The error message was specific but I had no context for it. I'd never seen this kind of failure before. I didn't know the right vocabulary to even search for what was wrong. I just read the error, guessed, changed something, and ran it again. It crashed differently. That was actually progress — a different crash meant I'd fixed something, even if I'd also broken something new.",
+            "That loop — read, guess, change, run, crash again — repeated more times than I want to admit before anything resembling training actually started.",
+          ],
+        },
+        {
+          HEADING: "The moment it actually ran felt unreal",
+          PARAGRAPHS: [
+            "There's a specific feeling when you've been staring at error messages for hours and then, suddenly, a progress bar starts moving. I sat there for a second just watching it. Not doing anything. Just watching the bar move, because I genuinely wasn't sure if I trusted it yet.",
+            "I went to get water. Came back. Still running. It was real.",
+          ],
+        },
+        {
+          HEADING: "And then it broke again. At a completely different stage.",
+          PARAGRAPHS: [
+            "Training finished and I hit a wall I hadn't even thought about: getting the trained weights back into the model in a usable form. I tried two approaches. Both failed in different, confusing ways. One crashed immediately, one ran silently and did nothing — which somehow felt worse. A crash at least tells you something. A silent failure just leaves you staring at an empty folder wondering if you did it right.",
+            "I ended up in forum threads and GitHub issues at midnight, scrolling through other people who'd hit the exact same wall months before me. That's the thing about building on new tools — the path is there, but you have to find it in comment sections and three-year-old issue threads, not in the documentation.",
+          ],
+        },
+        {
+          HEADING: "It ran on my laptop and I didn't know how to feel",
+          PARAGRAPHS: [
+            "When it finally worked — when I typed a message and got back something that actually sounded like me — I didn't celebrate. I just sat there. The week had been too long and too frustrating for a clean emotional landing. It was more like the quiet after a storm than any kind of victory.",
+            "But it worked. A local model, running on my own hardware, responding in my voice. That started as a 1am idea and it existed now. That meant something, even if I was too tired to feel it properly in the moment.",
+          ],
+        },
+        {
+          HEADING: "The part I keep thinking about",
+          PARAGRAPHS: [
+            "There's a version of me that closed the terminal after the second crash and called it a learning experience. The version that shipped the model is just the version that ran the loop one more time each time. I don't think that's a talent. I think it's just a decision you keep making — not once, but over and over, every time something new breaks.",
+            "The model lives on Hugging Face now. The code is on GitHub. But the thing I'm actually proud of is just that I didn't quit on attempt three when midnight was long gone and I still didn't know what was wrong.",
+          ],
+        },
+      ],
+      TOPICS: ["Fine-tuning", "LLM", "Personal Projects", "Llama 3.1", "Persistence"],
+    },
   },
 
   RESEARCH_PAPERS: {
     "Scaling Context Windows to Infinity: A Comprehensive Study of Position Encoding, Attention Mechanisms, Memory-Efficient Inference, and Context Reduction Techniques in Large Language Models":
-      {
-        DATE: "2026",
-        VENUE: "Academia.edu",
-        LINK: "https://www.academia.edu/162466927/Scaling_Context_Windows_to_Infinity_A_Comprehensive_Study_of_Position_Encoding_Attention_Mechanisms_Memory_Efficient_Inference_and_Context_Reduction_Techniques_in_Large_Language_Models?source=swp_share",
-        DESCRIPTION:
-          "A comprehensive analysis of techniques for extending context windows in large language models, examining position encoding strategies, efficient attention mechanisms, and memory-optimized inference approaches to enable processing of arbitrarily long sequences.",
-      },
+    {
+      DATE: "2026",
+      VENUE: "Academia.edu",
+      LINK: "https://www.academia.edu/162466927/Scaling_Context_Windows_to_Infinity_A_Comprehensive_Study_of_Position_Encoding_Attention_Mechanisms_Memory_Efficient_Inference_and_Context_Reduction_Techniques_in_Large_Language_Models?source=swp_share",
+      DESCRIPTION:
+        "A comprehensive analysis of techniques for extending context windows in large language models, examining position encoding strategies, efficient attention mechanisms, and memory-optimized inference approaches to enable processing of arbitrarily long sequences.",
+    },
     "Unlocking Societal Trends in Aadhaar Enrolment and Updates: Anomaly Detection and Fraud Risk Prediction":
-      {
-        DATE: "2026",
-        VENUE: "Academia.edu",
-        LINK: "https://www.academia.edu/162466949/Unlocking_Societal_Trends_in_Aadhaar_Enrolment_and_Updates_Anomaly_Detection_and_Fraud_Risk_Prediction_A_Data_Driven_Approach_to_Identify_Suspicious_Patterns?source=swp_share",
-        DESCRIPTION:
-          "A data-driven approach to identify suspicious patterns in India's Aadhaar biometric identification system, utilizing machine learning for anomaly detection and fraud risk prediction in enrollment and update processes.",
-      },
+    {
+      DATE: "2026",
+      VENUE: "Academia.edu",
+      LINK: "https://www.academia.edu/162466949/Unlocking_Societal_Trends_in_Aadhaar_Enrolment_and_Updates_Anomaly_Detection_and_Fraud_Risk_Prediction_A_Data_Driven_Approach_to_Identify_Suspicious_Patterns?source=swp_share",
+      DESCRIPTION:
+        "A data-driven approach to identify suspicious patterns in India's Aadhaar biometric identification system, utilizing machine learning for anomaly detection and fraud risk prediction in enrollment and update processes.",
+    },
     "Speeding Up LLM Inference Using Quantum Computing Techniques": {
       DATE: "2026",
       VENUE: "Under Research",
