@@ -1,5 +1,3 @@
-"use client";
-
 import { DATA } from "@/app/data";
 import {
   AboutMe,
@@ -14,12 +12,12 @@ import {
   Skills,
 } from "@/components/sections";
 import { GitHubContributions } from "@/components/sections/github-contribution";
+import { CursorLayer } from "@/components/ui/cursor-layer";
 import GridPattern from "@/components/ui/grid-pattern";
-import TargetCursor from "@/components/ui/target-cursor";
-import useMobileDetection from "@/hooks/use-mobile";
+import { getBlogPosts } from "@/lib/blogs";
 
 export default function Page() {
-  const checkMobile = useMobileDetection();
+  const blogPosts = getBlogPosts();
 
   return (
     <div className="mx-auto px-4 pt-6 sm:pt-12 w-full lg:w-2/3 xl:w-1/2 text-foreground">
@@ -39,14 +37,14 @@ export default function Page() {
         <Experience data={DATA.EXPERIENCE} />
         <Projects data={DATA.PROJECTS} />
         <GitHubContributions />
-        <Blogs data={DATA.BLOGS} />
+        <Blogs data={blogPosts} />
         <ResearchPapers data={DATA.RESEARCH_PAPERS} />
         <Skills data={DATA.SKILLS} />
         <Contact data={DATA.HEADER} />
         <Footer />
       </main>
 
-      {!checkMobile && <TargetCursor spinDuration={2} hideDefaultCursor />}
+      <CursorLayer />
     </div>
   );
 }

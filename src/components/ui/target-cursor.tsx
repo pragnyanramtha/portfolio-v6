@@ -1,3 +1,5 @@
+"use client";
+
 import { gsap } from "gsap";
 import React, { useCallback, useEffect, useMemo, useRef } from "react";
 
@@ -94,7 +96,10 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
       const allTargets: Element[] = [];
       let current = directTarget;
       while (current && current !== document.body) {
-        if (current.matches(targetSelector) && !current.classList.contains('cursor-default')) {
+        if (
+          current.matches(targetSelector) &&
+          !current.classList.contains("cursor-default")
+        ) {
           allTargets.push(current);
         }
         current = current.parentElement!;

@@ -1,3 +1,5 @@
+"use client";
+
 import { FileText, Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 

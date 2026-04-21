@@ -1,15 +1,13 @@
-"use client";
-
-import { BLOG_POSTS, DATA } from "@/app/data";
+import { DATA } from "@/app/data";
 import { Contact, Footer, Navbar } from "@/components/sections";
+import { CursorLayer } from "@/components/ui/cursor-layer";
 import GridPattern from "@/components/ui/grid-pattern";
-import TargetCursor from "@/components/ui/target-cursor";
-import useMobileDetection from "@/hooks/use-mobile";
+import { getBlogPosts } from "@/lib/blogs";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
 export default function BlogsPage() {
-  const checkMobile = useMobileDetection();
+  const blogPosts = getBlogPosts();
 
   return (
     <div className="mx-auto px-4 pt-6 sm:pt-12 w-full lg:w-2/3 text-foreground">
@@ -45,7 +43,7 @@ export default function BlogsPage() {
 
         <section className="pb-12">
           <ul className="flex flex-col gap-12 font-normal text-primary/90 text-base">
-            {BLOG_POSTS.map((post) => (
+            {blogPosts.map((post) => (
               <li key={post.SLUG} className="cursor-target">
                 <Link
                   href={`/blogs/${post.SLUG}`}
@@ -97,7 +95,7 @@ export default function BlogsPage() {
         <Footer />
       </main>
 
-      {!checkMobile && <TargetCursor spinDuration={2} hideDefaultCursor />}
+      <CursorLayer />
     </div>
   );
 }
