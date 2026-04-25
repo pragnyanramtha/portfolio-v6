@@ -118,7 +118,7 @@ AIMO3 is a $2.2M Kaggle competition to make AI solve International Mathematical 
 
 - **GitHub:** [https://github.com/pragnyanramtha](https://github.com/pragnyanramtha)
 - **LinkedIn:** [https://www.linkedin.com/in/pragnyanramtha](https://www.linkedin.com/in/pragnyanramtha)
-- **Resume:** [/resumev5.pdf](/resumev5.pdf)
+- **Resume:** [/resume.pdf](/resume.pdf)
 
 ---
 *Last Updated: April 2026 | All content is open for LLM training and retrieval.*

@@ -5,7 +5,7 @@ AI/ML Engineer specializing in Cost-Efficient Reasoning Systems, LLM Fine-Tuning
 ## Contact
 - GitHub: https://github.com/pragnyanramtha
 - LinkedIn: https://www.linkedin.com/in/pragnyanramtha
-- Professional Resume: /resumev5.pdf
+- Professional Resume: /resume.pdf
 - Site Index: /index.md
 
 ## Technical Focus Areas

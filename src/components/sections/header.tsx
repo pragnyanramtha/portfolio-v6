@@ -27,6 +27,14 @@ export function Header({ data }: { data: Record<string, string> }) {
 
         <div className="flex items-center gap-2 text-sm">
           <MovingElement
+            className="inline-flex justify-center items-center border border-primary bg-primary text-primary-foreground betterhover:hover:bg-primary/90 shadow-lg shadow-primary/40 px-4 py-2 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 h-9 font-semibold text-sm whitespace-nowrap transition-all betterhover:hover:-translate-y-0.5 disabled:pointer-events-none"
+            change={() => handleChange(data.MEETING)}
+            toChange={false}
+            ariaLabel="Inquire"
+          >
+            Inquire
+          </MovingElement>
+          <MovingElement
             className="inline-flex justify-center items-center bg-primary betterhover:hover:bg-primary/90 disabled:opacity-50 shadow px-4 py-2 rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring h-9 font-medium text-primary-foreground text-sm whitespace-nowrap transition-colors disabled:pointer-events-none"
             change={() => handleChange(data.RESUME)}
             toChange={false}

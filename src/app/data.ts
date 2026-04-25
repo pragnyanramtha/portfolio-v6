@@ -37,7 +37,8 @@ export const DATA = {
     PRONOUN: "he/him",
     HEADLINE:
       "AI/ML Engineer specializing in Cost-Efficient Reasoning Systems & LLM Fine-Tuning. Medalist @ AIMO3.",
-    RESUME: "/resumev5.pdf",
+    RESUME: "/resume.pdf",
+    MEETING: "https://cal.com/pragnyanramtha",
     EMAIL: "mailto:pragnyanramtha@gmail.com",
     GITHUB: "https://github.com/pragnyanramtha",
     LINKEDIN: "https://www.linkedin.com/in/pragnyanramtha",

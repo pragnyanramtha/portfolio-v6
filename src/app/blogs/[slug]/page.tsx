@@ -7,11 +7,15 @@ import TargetCursor from "@/components/ui/target-cursor";
 import useMobileDetection from "@/hooks/use-mobile";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import { useParams } from "next/navigation";
+import { use } from "react";
 
-export default function BlogPostPage() {
-  const params = useParams<{ slug: string }>();
-  const post = getBlogPostBySlug(params.slug);
+type BlogPostPageProps = {
+  params: Promise<{ slug: string }>;
+};
+
+export default function BlogPostPage({ params }: BlogPostPageProps) {
+  const { slug } = use(params);
+  const post = getBlogPostBySlug(slug);
   const checkMobile = useMobileDetection();
 
   if (!post) {
