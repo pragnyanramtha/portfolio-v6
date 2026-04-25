@@ -1,4 +1,4 @@
-import { BLOG_POSTS } from "@/app/data";
+import { getBlogPosts } from "@/lib/blogs";
 import { MetadataRoute } from "next";
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
@@ -37,7 +37,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
   ];
 
-  const blogRoutes: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => ({
+  const blogRoutes: MetadataRoute.Sitemap = getBlogPosts().map((post) => ({
     url: `${baseUrl}/blogs/${post.SLUG}`,
     lastModified: new Date(),
     changeFrequency: "monthly",

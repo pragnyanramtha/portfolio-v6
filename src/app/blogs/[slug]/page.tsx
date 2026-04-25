@@ -1,22 +1,27 @@
-"use client";
-
-import { BLOG_POSTS, DATA, getBlogPostBySlug } from "@/app/data";
+import { DATA } from "@/app/data";
 import { Contact, Footer, Navbar } from "@/components/sections";
+import { CursorLayer } from "@/components/ui/cursor-layer";
 import GridPattern from "@/components/ui/grid-pattern";
-import TargetCursor from "@/components/ui/target-cursor";
-import useMobileDetection from "@/hooks/use-mobile";
+import { getBlogPostBySlug, getBlogPosts } from "@/lib/blogs";
+import { renderBlogMarkdown } from "@/lib/render-text";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import { use } from "react";
 
-type BlogPostPageProps = {
-  params: Promise<{ slug: string }>;
-};
+interface BlogPostPageProps {
+  params: Promise<{
+    slug: string;
+  }>;
+}
 
-export default function BlogPostPage({ params }: BlogPostPageProps) {
-  const { slug } = use(params);
+export function generateStaticParams() {
+  return getBlogPosts().map((post) => ({
+    slug: post.SLUG,
+  }));
+}
+
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  const { slug } = await params;
   const post = getBlogPostBySlug(slug);
-  const checkMobile = useMobileDetection();
 
   if (!post) {
     return (
@@ -46,7 +51,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     );
   }
 
-  const relatedPosts = BLOG_POSTS.filter(
+  const relatedPosts = getBlogPosts().filter(
     (candidate) => candidate.SLUG !== post.SLUG
   );
 
@@ -100,7 +105,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
             <div className="mt-8 space-y-4 text-muted-foreground text-sm sm:text-base leading-7 text-justify">
               {post.INTRO.map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
+                <p key={index}>{renderBlogMarkdown(paragraph)}</p>
               ))}
             </div>
 
@@ -112,7 +117,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                   </h2>
                   <div className="mt-4 space-y-4 text-muted-foreground text-sm sm:text-base leading-7 text-justify">
                     {section.PARAGRAPHS.map((paragraph, index) => (
-                      <p key={index}>{paragraph}</p>
+                      <p key={index}>{renderBlogMarkdown(paragraph)}</p>
                     ))}
                   </div>
                 </section>
@@ -151,7 +156,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         <Footer />
       </main>
 
-      {!checkMobile && <TargetCursor spinDuration={2} hideDefaultCursor />}
+      <CursorLayer />
     </div>
   );
 }
