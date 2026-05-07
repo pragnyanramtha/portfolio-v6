@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import Script from "next/script";
 const outfit = Outfit({
   subsets: ["latin"],
   display: "swap",
@@ -113,8 +112,7 @@ export default function RootLayout({
             <SpeedInsights />
           </>
         )}
-        <Script
-          id="structured-data"
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />

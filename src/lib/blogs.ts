@@ -55,7 +55,7 @@ function readBlogPost(fileName: string): BlogPost {
 }
 
 function parseMarkdownFile(fileContents: string) {
-  const frontmatterMatch = /^---\n([\s\S]*?)\n---\n?([\s\S]*)$/.exec(
+  const frontmatterMatch = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/.exec(
     fileContents
   );
 
@@ -73,7 +73,7 @@ function parseFrontmatter(rawFrontmatter: string): Frontmatter {
   const frontmatter: Frontmatter = {};
   let activeListKey: string | null = null;
 
-  for (const line of rawFrontmatter.split("\n")) {
+  for (const line of rawFrontmatter.split(/\r?\n/)) {
     if (!line.trim()) continue;
 
     const listItem = /^\s+-\s+(.*)$/.exec(line);
@@ -102,7 +102,7 @@ function parseBlogBody(body: string) {
   const content: BlogPost["CONTENT"] = [];
   let activeSection: BlogPost["CONTENT"][number] | null = null;
 
-  for (const block of body.split(/\n{2,}/).map((block) => block.trim())) {
+  for (const block of body.split(/(?:\r?\n){2,}/).map((block) => block.trim())) {
     if (!block) continue;
 
     if (block.startsWith("## ")) {

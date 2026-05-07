@@ -132,3 +132,28 @@ li {
 .cursor-default {
   cursor: default !important;
 }
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  nav, #navbar, .navbar,
+  [data-cursor], .target-cursor, .cursor-layer,
+  .grid-pattern,
+  .scroll-indicator,
+  button, .button {
+    display: none !important;
+  }
+
+  body {
+    overflow: visible !important;
+    width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5in;
+  }
+}
