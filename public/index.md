@@ -42,19 +42,26 @@ He is known for his work in mathematical reasoning (AIMO3 Catalyst), abstract pa
 
 ## 📈 Professional Experience
 
-### Reputation-DAO | AI Engineering Intern
-*Aug 2025 – Jan 2026*
+### Learnable India | Special Education Specialist
+*Apr 2026 - Present*
 **Core Impact:**
-- **Serverless MLOps:** Architected high-availability backends on GCP, achieving **99.9% uptime** while **reducing cloud spend by 70%**.
-- **Latency Optimization:** Developed a Gemini API response system with optimized prompt caching, cutting inference latency by **50%**.
-- **RAG Systems:** Built a production RAG pipeline using semantic search and source attribution for customer support automation.
+- **Accessibility Research:** Researched accessibility gaps by teaching and mentoring visually impaired students, then adapted class workflows to make learning delivery more usable for blind learners.
+- **Learning Infrastructure:** Built Learnable India's previously non-existent digital infrastructure by shipping a learning portal and AI assistance workflows, creating a foundation for student support and class delivery.
+- **Expert Collaboration:** Collaborated with TEDx speakers, educators, and internal teams to turn expert sessions into accessible learning experiences for students with diverse learning needs.
 
-### Open Source Contributions
-*Jan 2025 – Present*
+### Reputation Dao | Agentic AI Developer
+*Aug 2025 - Jan 2026*
 **Core Impact:**
-- **Scrapy Patch:** Identified and fixed a URL duplicate filtering bottleneck, resulting in a **2x crawl speedup**.
-- **CLI Tooling:** Contributed sudo-bug fixes to Google's Gemini CLI.
-- **Hackathons:** Winner of IEEE Summer of Code (IEEESoC) 2025.
+- **Serverless AI Backend:** Architected a GCP serverless backend achieving **99.9% uptime** with Cloud Functions and Cloud Run for production-grade AI orchestration.
+- **Latency Optimization:** Reduced inference latency by **50%** across support workflows with a Gemini API response system and optimized prompt caching.
+- **RAG Systems:** Developed a RAG pipeline using semantic search for real-time documentation retrieval and source attribution.
+
+### Six Axis Studios | Machine Learning Intern
+*Feb 2025 - May 2025*
+**Core Impact:**
+- **World Models:** Researched world-model approaches for architecture workflows to generate CAD-style design outputs from spatial context and architect design intent.
+- **CAD Generation:** Prototyped ML pipelines that translated early architectural concepts into structured geometry, creating a faster path from design exploration to CAD handoff.
+- **Model Evaluation:** Evaluated generated layouts against architectural constraints to improve reliability before model outputs were used in downstream design workflows.
 
 ---
 

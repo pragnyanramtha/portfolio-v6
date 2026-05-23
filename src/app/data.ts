@@ -36,29 +36,59 @@ export const DATA = {
   },
 
   EXPERIENCE: {
-    "Reputation-DAO": {
-      WEBSITE: "https://reputationdao.com/",
-      POSITION: "AI Engineering Intern",
+    "Learnable India": {
+      WEBSITE: "https://learnableindia.org/",
+      POSITION: "Special Education Specialist",
       LOCATION: "Remote",
-      DURATION: "Aug 2025 – Jan 2026",
+      DURATION: "Apr 2026 - Present",
       DESCRIPTION: [
-        "Architected a high-availability serverless MLOps backend on GCP (Cloud Functions, Cloud Run) for production grade AI orchestration, achieving **99.9% uptime** while successfully **cutting down on cloud costs by 70%**.",
-        "Engineered a Gemini API response system with optimized prompt caching, which significantly reduced API costs and delivered a **50% reduction in inference latency** across critical workflows.",
-        "Boosted accuracy of customer support bot by developing a RAG pipeline utilizing semantic search for real-time documentation retrieval and source attribution.",
+        "Researched accessibility gaps by teaching and mentoring visually impaired students, then adapted class workflows to make learning delivery more usable for blind learners.",
+        "Built Learnable India's previously non-existent digital infrastructure by shipping a learning portal and AI assistance workflows, creating a foundation for student support and class delivery.",
+        "Collaborated with TEDx speakers, educators, and internal teams to turn expert sessions into accessible learning experiences for students with diverse learning needs.",
       ],
-      TECH_STACK: ["GCP", "Gemini API", "RAG", "Serverless", "Python"],
+      TECH_STACK: [
+        "Special Education",
+        "Accessibility",
+        "Python",
+        "Learning Portals",
+        "AI Assistance",
+      ],
     },
-    "Open Source Contributions": {
-      WEBSITE: "https://github.com/pragnyanramtha",
-      POSITION: "Github Contributor",
-      LOCATION: "Remote",
-      DURATION: "Jan 2025 – Present",
+    "Reputation Dao": {
+      WEBSITE: "https://reputationdao.com/",
+      POSITION: "Agentic AI Developer",
+      LOCATION: "Hyderabad, Telangana - Remote",
+      DURATION: "Aug 2025 - Jan 2026",
       DESCRIPTION: [
-        "Served as a key contributor to 30+ open-source projects, focusing on bug fixes and core feature development.",
-        "Identified a bottleneck in Scrapy causing severe latency, authored a fix that eliminated the drag and achieved a **2x speedup** for affected workflows.",
-        "Winner of IEEE Summer of Code (IEEESoC) Hackathon 2025, for open source contributions to multiple projects.",
+        "Architected a GCP serverless backend achieving **99.9% uptime** by leveraging Cloud Functions and Cloud Run for production-grade AI orchestration.",
+        "Reduced inference latency by **50%** across support workflows by engineering a Gemini API response system with optimized prompt caching.",
+        "Boosted accuracy and trust by developing a RAG pipeline utilizing semantic search for real-time documentation retrieval and source attribution.",
       ],
-      TECH_STACK: ["Python", "TypeScript", "Git", "Docker", "CI/CD"],
+      TECH_STACK: [
+        "Web Development",
+        "Full-Stack Development",
+        "GCP",
+        "Gemini API",
+        "RAG",
+        "Python",
+      ],
+    },
+    "Six Axis Studios": {
+      POSITION: "Machine Learning Intern",
+      LOCATION: "Greater Hyderabad Area - Remote",
+      DURATION: "Feb 2025 - May 2025",
+      DESCRIPTION: [
+        "Researched world-model approaches for architecture workflows to generate CAD-style design outputs from spatial context and architect design intent.",
+        "Prototyped ML pipelines that translated early architectural concepts into structured geometry, creating a faster path from design exploration to CAD handoff.",
+        "Evaluated generated layouts against architectural constraints to improve reliability before model outputs were used in downstream design workflows.",
+      ],
+      TECH_STACK: [
+        "Artificial Intelligence",
+        "World Models",
+        "CAD Generation",
+        "Machine Learning",
+        "Python",
+      ],
     },
   },
 
@@ -97,21 +127,21 @@ export const DATA = {
 
   RESEARCH_PAPERS: {
     "Scaling Context Windows to Infinity: A Comprehensive Study of Position Encoding, Attention Mechanisms, Memory-Efficient Inference, and Context Reduction Techniques in Large Language Models":
-    {
-      DATE: "2026",
-      VENUE: "Academia.edu",
-      LINK: "https://www.academia.edu/162466927/Scaling_Context_Windows_to_Infinity_A_Comprehensive_Study_of_Position_Encoding_Attention_Mechanisms_Memory_Efficient_Inference_and_Context_Reduction_Techniques_in_Large_Language_Models?source=swp_share",
-      DESCRIPTION:
-        "A comprehensive analysis of techniques for extending context windows in large language models, examining position encoding strategies, efficient attention mechanisms, and memory-optimized inference approaches to enable processing of arbitrarily long sequences.",
-    },
+      {
+        DATE: "2026",
+        VENUE: "Academia.edu",
+        LINK: "https://www.academia.edu/162466927/Scaling_Context_Windows_to_Infinity_A_Comprehensive_Study_of_Position_Encoding_Attention_Mechanisms_Memory_Efficient_Inference_and_Context_Reduction_Techniques_in_Large_Language_Models?source=swp_share",
+        DESCRIPTION:
+          "A comprehensive analysis of techniques for extending context windows in large language models, examining position encoding strategies, efficient attention mechanisms, and memory-optimized inference approaches to enable processing of arbitrarily long sequences.",
+      },
     "Unlocking Societal Trends in Aadhaar Enrolment and Updates: Anomaly Detection and Fraud Risk Prediction":
-    {
-      DATE: "2026",
-      VENUE: "Academia.edu",
-      LINK: "https://www.academia.edu/162466949/Unlocking_Societal_Trends_in_Aadhaar_Enrolment_and_Updates_Anomaly_Detection_and_Fraud_Risk_Prediction_A_Data_Driven_Approach_to_Identify_Suspicious_Patterns?source=swp_share",
-      DESCRIPTION:
-        "A data-driven approach to identify suspicious patterns in India's Aadhaar biometric identification system, utilizing machine learning for anomaly detection and fraud risk prediction in enrollment and update processes.",
-    },
+      {
+        DATE: "2026",
+        VENUE: "Academia.edu",
+        LINK: "https://www.academia.edu/162466949/Unlocking_Societal_Trends_in_Aadhaar_Enrolment_and_Updates_Anomaly_Detection_and_Fraud_Risk_Prediction_A_Data_Driven_Approach_to_Identify_Suspicious_Patterns?source=swp_share",
+        DESCRIPTION:
+          "A data-driven approach to identify suspicious patterns in India's Aadhaar biometric identification system, utilizing machine learning for anomaly detection and fraud risk prediction in enrollment and update processes.",
+      },
     "Speeding Up LLM Inference Using Quantum Computing Techniques": {
       DATE: "2026",
       VENUE: "Under Research",

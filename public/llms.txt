@@ -18,7 +18,9 @@ AI/ML Engineer specializing in Cost-Efficient Reasoning Systems, LLM Fine-Tuning
 - **AIMO-3 Medalist:** Fine-tuned 14B models to 90% reasoning accuracy using specialized CoT/TiR datasets.
 - **OpenAI Parameter Golf (Top 5):** Achieved 1.1271 BPB on FineWeb using XSA4 + EMA + GPTQ-Int6 stack.
 - **ARC-AGI-2 (#1 Rank):** Adaptation of budget-aware solving patterns for fluid intelligence benchmarks.
-- **Scrapy Contributor:** Authored core speedup patches for URL duplicate filtering.
+- **Agentic AI Developer:** Built GCP serverless AI orchestration, Gemini API workflows, and RAG systems at Reputation Dao.
+- **Special Education Specialist:** Taught visually impaired students, collaborated with TEDx speakers, and built Learnable India's learning portal and AI assistance infrastructure.
+- **Machine Learning Intern:** Researched world-model systems for architecture workflows and prototyped CAD-style design generation pipelines at Six Axis Studios.
 
 ## Blog Summaries
 - **Fine-Tuning Reasoning:** Insights on data quality over quantity and benchmark hygiene.

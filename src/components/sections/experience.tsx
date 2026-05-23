@@ -2,7 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import { renderBoldText } from "@/lib/render-text";
 
 interface IExperienceData {
-  WEBSITE: string;
+  WEBSITE?: string;
   POSITION: string;
   LOCATION: string;
   DURATION: string;
@@ -33,14 +33,18 @@ export function Experience({
                   </p>
                   <p className="flex items-center text-sm">
                     at,{" "}
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-1 ml-1"
-                      href={value.WEBSITE}
-                    >
-                      {key} <ArrowUpRight size={18} />
-                    </a>
+                    {value.WEBSITE ? (
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1 ml-1"
+                        href={value.WEBSITE}
+                      >
+                        {key} <ArrowUpRight size={18} />
+                      </a>
+                    ) : (
+                      <span className="ml-1">{key}</span>
+                    )}
                   </p>
                 </div>
                 <p className="text-muted-foreground text-sm">
