@@ -42,7 +42,7 @@ He is known for his work in mathematical reasoning (AIMO3 Catalyst), abstract pa
 
 ## 📈 Professional Experience
 
-### Learnable India | Special Education Specialist
+### Learnable India | Computational Education Specialist
 *Apr 2026 - Present*
 **Core Impact:**
 - **Accessibility Research:** Researched accessibility gaps by teaching and mentoring visually impaired students, then adapted class workflows to make learning delivery more usable for blind learners.

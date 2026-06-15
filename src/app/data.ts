@@ -38,7 +38,7 @@ export const DATA = {
   EXPERIENCE: {
     "Learnable India": {
       WEBSITE: "https://learnableindia.org/",
-      POSITION: "Special Education Specialist",
+      POSITION: "Computational Education Specialist",
       LOCATION: "Remote",
       DURATION: "Apr 2026 - Present",
       DESCRIPTION: [
@@ -47,7 +47,7 @@ export const DATA = {
         "Collaborated with TEDx speakers, educators, and internal teams to turn expert sessions into accessible learning experiences for students with diverse learning needs.",
       ],
       TECH_STACK: [
-        "Special Education",
+        "Computational Education",
         "Accessibility",
         "Python",
         "Learning Portals",
