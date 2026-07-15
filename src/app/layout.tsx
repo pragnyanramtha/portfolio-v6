@@ -63,19 +63,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const personSchema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: "Pragnyan Ramtha",
-    url: "https://pragnyanramtha.dev/",
-    jobTitle: "AI Engineer | AI, Machine Learning, and Deep Learning",
-    sameAs: [
-      "https://github.com/pragnyanramtha",
-      "https://www.linkedin.com/in/pragnyanramtha",
-    ],
-    description: metaDescription,
-  };
-
   return (
     <html lang="en" className={`${outfit.variable}`} suppressHydrationWarning>
       <head>
@@ -89,6 +76,23 @@ export default function RootLayout({
         <meta
           name="darkreader-lock"
           content="darkreader-inline-stroke darkreader-inline-fill"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Pragnyan Ramtha",
+              url: "https://pragnyanramtha.dev/",
+              jobTitle: "AI Engineer | AI, Machine Learning, and Deep Learning",
+              sameAs: [
+                "https://github.com/pragnyanramtha",
+                "https://www.linkedin.com/in/pragnyanramtha",
+              ],
+              description: metaDescription,
+            }),
+          }}
         />
       </head>
       <body
@@ -110,10 +114,6 @@ export default function RootLayout({
             <SpeedInsights />
           </>
         )}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-        />
       </body>
     </html>
   );
