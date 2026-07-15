@@ -32,8 +32,11 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://pragnyanramtha.dev";
 
   return {
-    title: `${post.TITLE} | Pragnyan Ramtha`,
+    title: `${post.TITLE}`,
     description,
+    alternates: {
+      canonical: `/blogs/${post.SLUG}`,
+    },
     openGraph: {
       title: post.TITLE,
       description,
@@ -108,6 +111,32 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       />
 
       <main className="px-4 min-h-lvh">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              headline: post.TITLE,
+              description: post.DESCRIPTION[0],
+              author: {
+                "@type": "Person",
+                name: "Pragnyan Ramtha",
+                url: "https://pragnyanramtha.dev",
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Pragnyan Ramtha",
+              },
+              datePublished: post.DATE,
+              mainEntityOfPage: {
+                "@type": "WebPage",
+                "@id": `https://pragnyanramtha.dev/blogs/${post.SLUG}`,
+              },
+              keywords: post.TOPICS.join(", "),
+            }),
+          }}
+        />
         <article className="py-16">
           <div className="max-w-3xl">
             <Link

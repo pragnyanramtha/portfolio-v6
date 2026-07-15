@@ -11,38 +11,75 @@ const outfit = Outfit({
 });
 
 const metaDescription =
-  "AI Engineer specializing in AI, Machine Learning, and Deep Learning.";
+  "Pragnyan Ramtha — AI Engineer and founder of Agent7. I build autonomous AI agents, fine-tune LLMs with PEFT/QLoRA, and contribute to open-source AI. Previously #1 on the ARC-AGI public leaderboard.";
 
 const metaKeywords = [
+  // Primary identity
   "Pragnyan Ramtha",
   "AI Engineer",
+  "Machine Learning Engineer",
+  "Deep Learning Engineer",
+  // Core skills
   "LLM Fine-tuning",
+  "PEFT",
+  "QLoRA",
   "RAG",
-  "PEFT QLoRA",
-  "High-Performance AI",
-  "Systems Engineer",
+  "Retrieval Augmented Generation",
+  "AI Agents",
   "Autonomous Agents",
-  "Machine Learning",
-  "Deep Learning",
+  "Agentic AI",
+  // Platforms & tools
+  "PyTorch",
+  "Transformers",
+  "Hugging Face",
+  "CUDA",
+  "Next.js",
+  "TypeScript",
+  "Python",
+  // Achievements
+  "ARC-AGI",
+  "ARC-AGI-2",
+  "AIMO",
+  "Open Source Contributor",
+  "Hackathon Winner",
+  // Roles
+  "Founder",
+  "Agent7",
+  "SaaS Builder",
+  "Full-Stack AI Developer",
+  // Long-tail
+  "AI Engineer Portfolio",
+  "LLM Fine-tuning Expert",
+  "AI Agent Developer",
+  "Open Source AI",
+  "Cost-Efficient AI Systems",
+  "Model Compression",
+  "GPTQ",
+  "Quantization",
 ];
 
 export const metadata: Metadata = {
-  title: "Pragnyan Ramtha | AI Engineer",
+  title: {
+    default: "Pragnyan Ramtha | AI Engineer — LLM Fine-Tuning, AI Agents, Open Source",
+    template: "%s | Pragnyan Ramtha",
+  },
   description: metaDescription,
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Pragnyan Ramtha | AI Engineer",
+    title: "Pragnyan Ramtha | AI Engineer — LLM Fine-Tuning, AI Agents, Open Source",
     description: metaDescription,
     url: "https://pragnyanramtha.dev/",
     type: "website",
+    siteName: "Pragnyan Ramtha",
+    locale: "en_US",
     images: [
       {
         url: "https://pragnyanramtha.dev/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Pragnyan Ramtha | AI Engineer",
+        alt: "Pragnyan Ramtha — AI Engineer, Founder of Agent7, ARC-AGI Top Ranker",
       },
     ],
   },
@@ -56,6 +93,21 @@ export const metadata: Metadata = {
   keywords: metaKeywords,
   creator: "Pragnyan Ramtha",
   publisher: "Pragnyan Ramtha",
+  metadataBase: new URL("https://pragnyanramtha.dev"),
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -72,7 +124,13 @@ export default function RootLayout({
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-        <link rel="canonical" href="https://pragnyanramtha.dev/" />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="Pragnyan Ramtha — AI Engineering Blog"
+          href="https://pragnyanramtha.dev/rss.xml"
+        />
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable profile" />
         <meta
           name="darkreader-lock"
           content="darkreader-inline-stroke darkreader-inline-fill"
@@ -85,12 +143,37 @@ export default function RootLayout({
               "@type": "Person",
               name: "Pragnyan Ramtha",
               url: "https://pragnyanramtha.dev/",
-              jobTitle: "AI Engineer | AI, Machine Learning, and Deep Learning",
+              jobTitle: "AI Engineer & Founder of Agent7",
+              description: metaDescription,
               sameAs: [
                 "https://github.com/pragnyanramtha",
                 "https://www.linkedin.com/in/pragnyanramtha",
               ],
-              description: metaDescription,
+              knowsAbout: [
+                "Artificial Intelligence",
+                "Machine Learning",
+                "Large Language Models",
+                "LLM Fine-tuning",
+                "PEFT",
+                "QLoRA",
+                "RAG",
+                "AI Agents",
+                "PyTorch",
+                "Python",
+                "TypeScript",
+              ],
+              hasOccupation: {
+                "@type": "Occupation",
+                name: "AI Engineer",
+                occupationLocation: {
+                  "@type": "Country",
+                  name: "India",
+                },
+              },
+              alumniOf: {
+                "@type": "CollegeOrUniversity",
+                name: "MRV University",
+              },
             }),
           }}
         />

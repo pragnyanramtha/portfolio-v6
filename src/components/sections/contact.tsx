@@ -9,7 +9,7 @@ export function Contact({ data }: { data: Record<string, string> }) {
       <div className="space-y-6 text-center">
         <div className="space-y-4">
           <h2 className="font-bold text-3xl">Let&apos;s work together.</h2>
-          <p className="mx-auto max-w-2xl text-gray-300 text-base">
+          <p className="mx-auto max-w-2xl text-muted-foreground text-base">
             I&apos;m always interested in new opportunities and exciting
             projects. Whether you have a project in mind or just want to chat
             about tech, I&apos;d love to hear from you.
@@ -43,7 +43,7 @@ export function Contact({ data }: { data: Record<string, string> }) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="text-gray-400 hover:text-white transition-colors"
+            className="text-muted-foreground hover:text-foreground transition-colors"
           >
             <Github className="w-5 h-5" />
           </Link>
@@ -52,7 +52,7 @@ export function Contact({ data }: { data: Record<string, string> }) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="text-gray-400 hover:text-white transition-colors"
+            className="text-muted-foreground hover:text-foreground transition-colors"
           >
             <Linkedin className="w-5 h-5" />
           </Link>
@@ -61,17 +61,17 @@ export function Contact({ data }: { data: Record<string, string> }) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Email"
-            className="text-gray-400 hover:text-white transition-colors"
+            className="text-muted-foreground hover:text-foreground transition-colors"
           >
             <Mail className="w-5 h-5" />
           </Link>
         </div>
 
         <div className="pt-4 cursor-target">
-          <p className="text-gray-400 text-sm">
-            Currently available for freelance work and internship opportunities
+          <p className="text-muted-foreground text-sm">
+            Open to AI engineering roles, consulting, and collaboration on ambitious AI projects
           </p>
-          <p className="mt-2 text-gray-500 text-xs">
+          <p className="mt-2 text-muted-foreground/60 text-xs">
             Response time: Usually within 24 hours
           </p>
         </div>

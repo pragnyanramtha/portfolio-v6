@@ -30,14 +30,18 @@ export function ResearchPapers({
               </p>
 
               <p className="flex items-center gap-1 text-sm">
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1"
-                  href={value.LINK}
-                >
-                  Read paper <ArrowUpRight size={18} />
-                </a>
+                {value.LINK ? (
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1"
+                    href={value.LINK}
+                  >
+                    Read paper <ArrowUpRight size={18} />
+                  </a>
+                ) : (
+                  <span className="text-muted-foreground/60 italic text-xs">In progress</span>
+                )}
                 {value.VENUE && (
                   <span className="px-1 py-px text-xs">{value.VENUE}</span>
                 )}

@@ -22,7 +22,7 @@ export const DATA = {
     NAME: "Pragnyan Ramtha",
     AGE: "18",
     PRONOUN: "he/him",
-    HEADLINE: "Founder @agent7.dev • Prev. #1 on ARC-AGI Public Leaderboard",
+    HEADLINE: "AI Engineer & Founder @agent7.dev — Prev. #1 on ARC-AGI Public Leaderboard",
     RESUME: "/resume.pdf",
     MEETING: "https://cal.com/pragnyanramtha",
     EMAIL: "mailto:pragnyanramtha@gmail.com",
@@ -32,7 +32,7 @@ export const DATA = {
 
   ABOUT_ME: {
     INTRO:
-      "I built **[Agent7](https://agent7.dev)** solo, **a no-code platform to build AI agents** that run long autonomous sessions. **I've won 5 hackathons** and previously held **#1 on the ARC-AGI** public leaderboard. I've also contributed **70+ merged PRs** across the open-source ecosystem, including contributions to",
+      "I'm an **AI Engineer** specializing in **LLM fine-tuning** (PEFT/QLoRA), **autonomous AI agent** systems, and **model compression**. I built **[Agent7](https://agent7.dev)** solo — a no-code platform for long-running AI agents — and previously held **#1 on the ARC-AGI** public leaderboard. **I've won 5 hackathons**, contributed **70+ merged open-source PRs** to projects like openai-node, langgraphjs, and pydantic-ai, and I'm focused on building cost-efficient AI systems that ship to production. My core specializations: retrieval-augmented generation (RAG), quantization (GPTQ, mixed-precision), and building autonomous AI agent frameworks.",
     OPEN_SOURCE: [
       { name: "openai-node", url: "https://github.com/openai/openai-node/pull/1885", highlight: true },
       { name: "langgraphjs", url: "https://github.com/langchain-ai/langgraphjs/pull/2409", highlight: true },
@@ -143,8 +143,7 @@ export const DATA = {
       NOTE: "Dec 2025",
       LINK: "https://huggingface.co/pragnyanramtha/phi-4-math-rplus",
       DESCRIPTION: [
-        "Fine-tuned Phi-4 (14B) on CoT and TiR datasets to optimize multi-step problem solving and tool-use efficiency.",
-        "Achieved **90% accuracy** on reasoning benchmarks, rivaling 125B parameter models while utilizing significantly fewer compute resources.",
+        "**AIMO-3 Solver Medalist** — fine-tuned Phi-4 (14B) on CoT and TiR datasets to optimize multi-step mathematical reasoning, achieving **90% accuracy** on competition benchmarks rivaling 125B parameter models with a fraction of the compute.",
       ],
       TECH_STACK: ["Phi-4", "Fine-tuning", "CoT/TiR", "PEFT"],
       IMAGE: AimoImage,
@@ -190,7 +189,6 @@ export const DATA = {
       },
     "Speeding Up LLM Inference Using Quantum Computing Techniques": {
       DATE: "2026",
-      VENUE: "In Progress",
       LINK: "",
       DESCRIPTION:
         "Exploring quantum-inspired algorithms and quantum computational primitives to accelerate inference in large language models, investigating quantum annealing for attention mechanisms and variational quantum circuits for efficient token generation.",
@@ -380,7 +378,9 @@ export const DATA = {
     ],
     Infrastructure: ["GCP", "Docker", "Linux (Arch)", "Nix", "Git", "CI/CD"],
     Achievements: [
+      "Top 5, OpenAI Parameter Golf (1.1271 BPB)",
       "Prev. #1 on ARC-AGI Public Leaderboard",
+      "AIMO-3 Solver Medalist",
       "70+ merged open-source PRs",
       "Winner, NIAT RAG Challenge",
       "Finalist, Smallest AI × IIT G",

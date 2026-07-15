@@ -85,20 +85,51 @@ export function renderBoldText(text: string) {
   return <>{renderTokens(tokenizeInline(text))}</>;
 }
 
+/**
+ * Renders inline markdown in blog content: **bold**, *italic*, [text](url), `code`
+ * Uses the same tokenizer as renderBoldText but with blog-specific styling.
+ */
 export function renderBlogMarkdown(text: string) {
   if (!text) return null;
+  const tokens = tokenizeInline(text);
+  return <>{renderBlogTokens(tokens)}</>;
+}
 
-  const parts = text.split(/(\*\*.*?\*\*)/g);
-
-  return parts.map((part, index) => {
-    if (part.startsWith('**') && part.endsWith('**')) {
-      return (
-        <strong key={index} className="font-semibold text-foreground">
-          {part.slice(2, -2)}
-        </strong>
-      );
+function renderBlogTokens(tokens: MdToken[]): React.ReactNode[] {
+  return tokens.map((t, i) => {
+    switch (t.type) {
+      case 'text':
+        return <React.Fragment key={i}>{t.value}</React.Fragment>;
+      case 'bold':
+        return (
+          <strong key={i} className="font-semibold text-foreground">
+            {renderBlogTokens(t.children)}
+          </strong>
+        );
+      case 'italic':
+        return (
+          <em key={i} className="italic text-foreground/80">
+            {renderBlogTokens(t.children)}
+          </em>
+        );
+      case 'link':
+        return (
+          <a
+            key={i}
+            href={t.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-foreground underline underline-offset-4 hover:text-foreground/80 transition-colors"
+          >
+            {renderBlogTokens(t.children)}
+          </a>
+        );
+      case 'code':
+        return (
+          <code key={i} className="font-mono text-sm bg-foreground/10 px-1.5 py-0.5 rounded">
+            {t.value}
+          </code>
+        );
     }
-
-    return <React.Fragment key={index}>{part}</React.Fragment>;
   });
 }

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { DATA } from "@/app/data";
 import { Contact, Footer, Navbar } from "@/components/sections";
 import { CursorLayer } from "@/components/ui/cursor-layer";
@@ -5,6 +6,15 @@ import GridPattern from "@/components/ui/grid-pattern";
 import { getBlogPosts } from "@/lib/blogs";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Blog — AI Engineering, LLM Fine-Tuning, Open Source",
+  description:
+    "Technical writing on LLM fine-tuning, AI agent systems, model compression, and open-source contributions by Pragnyan Ramtha.",
+  alternates: {
+    canonical: "/blogs",
+  },
+};
 
 export default function BlogsPage() {
   const blogPosts = getBlogPosts();
