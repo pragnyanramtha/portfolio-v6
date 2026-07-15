@@ -20,10 +20,10 @@ export interface IProjectData {
 export const DATA = {
   HEADER: {
     NAME: "Pragnyan Ramtha",
-    AGE: "17",
+    AGE: "18",
     PRONOUN: "he/him",
     HEADLINE:
-      "AI/ML Engineer specializing in Cost-Efficient Reasoning Systems & LLM Fine-Tuning. Medalist @ AIMO3.",
+      "Founder @agent7.dev · Prev. #1 on ARC-AGI Public Leaderboard",
     RESUME: "/resume.pdf",
     MEETING: "https://cal.com/pragnyanramtha",
     EMAIL: "mailto:pragnyanramtha@gmail.com",
@@ -33,10 +33,27 @@ export const DATA = {
 
   ABOUT_ME: {
     INTRO:
-      "Results-driven AI/ML Engineer specializing in Large Language Model (LLM) fine-tuning and AI system design. I design maintainable, production‑grade AI systems and can comfortably work with deep cloud infrastructure. I learn new tools fast and use AI as a force‑multiplier in my coding, designing, and research loops, which lets me move much faster while keeping systems reliable.",
+      "I built Agent7 solo, a no-code platform to build AI agents that run long autonomous sessions. I've won 5 hackathons and previously held #1 on the ARC-AGI public leaderboard.",
   },
 
   EXPERIENCE: {
+    "Agent7": {
+      WEBSITE: "https://agent7.dev",
+      POSITION: "Founder",
+      LOCATION: "Remote",
+      DURATION: "2025 - Present",
+      DESCRIPTION: [
+        "Built and launched a no-code AI agent platform entirely solo, from architecture to integrations to production deployment.",
+        "Agents run long autonomous sessions across 1,000+ app connectors, handling research, outreach, CRM, and cross-app workflows.",
+      ],
+      TECH_STACK: [
+        "Next.js",
+        "TypeScript",
+        "AI Agents",
+        "Full-Stack Development",
+        "SaaS",
+      ],
+    },
     "Learnable India": {
       WEBSITE: "https://learnableindia.org/",
       POSITION: "Computational Education Specialist",
@@ -94,6 +111,15 @@ export const DATA = {
   },
 
   PROJECTS: {
+    Agent7: {
+      NOTE: "2025 - Present",
+      LINK: "https://agent7.dev",
+      DESCRIPTION: [
+        "Built a no-code AI agent platform from scratch, solo. Agents connect to 1,000+ apps and run autonomous sessions for hours or days.",
+        "Handles research, outreach, CRM updates, lead qualification, and cross-app workflows from plain English instructions.",
+      ],
+      TECH_STACK: ["Next.js", "TypeScript", "AI Agents", "Integrations", "SaaS"],
+    },
     "AIMO-3: Efficient Reasoning via LLM Fine-Tuning": {
       NOTE: "Dec 2025",
       LINK: "https://huggingface.co/pragnyanramtha/phi-4-math-rplus",
@@ -330,8 +356,9 @@ export const DATA = {
       "CS50: comp. Sci. (Harvard University)",
     ],
     Achievements: [
-      "Artificial Intelligence Mathematical Olympiad (AIMO) Silver Medalist",
-      "Authored 2 Research Papers on Modern AI Optimization Techniques",
+      "Prev. #1 on ARC-AGI Public Leaderboard",
+      "Winner, NIAT RAG Challenge",
+      "Finalist, Smallest AI × IIT G",
       "Winner, IEEE Summer of Code (IEEESOC) Hackathon 2025",
       "Winner, Empathy Encryption Hackathon 2025",
       "Winner, Daydream Hyderabad @ Hackclub 2025",
