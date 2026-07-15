@@ -1,6 +1,9 @@
 import "server-only";
 
 import { cache } from "react";
+// NOTE: Sync fs APIs are used intentionally here. This module is server-only
+// and consumed exclusively by Next.js App Router server components, where sync
+// reads are acceptable and avoid cascading async changes across all callers.
 import { readFileSync, readdirSync } from "fs";
 import path from "path";
 

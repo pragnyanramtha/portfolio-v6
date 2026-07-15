@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer base {
   :root {
     --elastic-out: linear(
@@ -123,10 +119,8 @@ body {
   border-radius: 4px;
 }
 
-a,
-span,
-li {
-  transition: all 1s var(--elastic-out);
+a {
+  transition: color 0.2s ease, opacity 0.2s ease;
 }
 
 .cursor-default {

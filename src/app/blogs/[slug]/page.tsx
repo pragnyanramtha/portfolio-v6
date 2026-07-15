@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { DATA } from "@/app/data";
 import { Contact, Footer, Navbar } from "@/components/sections";
 import { CursorLayer } from "@/components/ui/cursor-layer";
@@ -17,6 +18,45 @@ export function generateStaticParams() {
   return getBlogPosts().map((post) => ({
     slug: post.SLUG,
   }));
+}
+
+export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = getBlogPostBySlug(slug);
+
+  if (!post) {
+    return { title: "Post Not Found" };
+  }
+
+  const description = post.DESCRIPTION[0] || post.TITLE;
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://pragnyanramtha.dev";
+
+  return {
+    title: `${post.TITLE} | Pragnyan Ramtha`,
+    description,
+    openGraph: {
+      title: post.TITLE,
+      description,
+      url: `${baseUrl}/blogs/${post.SLUG}`,
+      type: "article",
+      publishedTime: post.DATE,
+      authors: ["Pragnyan Ramtha"],
+      images: [
+        {
+          url: `${baseUrl}/opengraph-image.png`,
+          width: 1200,
+          height: 630,
+          alt: post.TITLE,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.TITLE,
+      description,
+      images: [`${baseUrl}/opengraph-image.png`],
+    },
+  };
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {

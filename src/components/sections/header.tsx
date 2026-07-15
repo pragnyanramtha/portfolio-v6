@@ -19,12 +19,12 @@ export function Header({ data }: { data: Record<string, string> }) {
           <h1 className="font-bold text-primary/90 text-4xl tracking-tight">
             {data.NAME}
           </h1>
-          <h2 className="flex flex-col gap-0 font-normal text-primary/90 text-base">
-            <p>
+          <div className="flex flex-col gap-0 font-normal text-primary/90 text-base">
+            <span>
               {data.AGE}, {data.PRONOUN}
-            </p>
-            <p>{data.HEADLINE}</p>
-          </h2>
+            </span>
+            <span>{data.HEADLINE}</span>
+          </div>
         </div>
 
         <div className="flex items-center gap-2 text-sm">

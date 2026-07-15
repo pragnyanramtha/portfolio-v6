@@ -21,6 +21,13 @@ export default function Page() {
 
   return (
     <div className="mx-auto px-4 pt-6 sm:pt-12 w-full lg:w-2/3 xl:w-1/2 text-foreground">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-primary focus:text-primary-foreground focus:px-4 focus:py-2 focus:rounded"
+      >
+        Skip to content
+      </a>
+
       <Navbar />
 
       <GridPattern
@@ -31,7 +38,7 @@ export default function Page() {
         className="[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)]"
       />
 
-      <main className="px-4 min-h-lvh">
+      <main id="main-content" className="px-4 min-h-lvh">
         <Header data={DATA.HEADER} />
         <AboutMe data={DATA.ABOUT_ME} />
         <Experience data={DATA.EXPERIENCE} />

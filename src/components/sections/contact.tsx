@@ -4,11 +4,6 @@ import { FileText, Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 
 export function Contact({ data }: { data: Record<string, string> }) {
-  const handleChange = (url: string) => {
-    const newWindow = window.open(url, "_blank", "noopener,noreferrer");
-    newWindow?.focus();
-  };
-
   return (
     <section className="py-10">
       <div className="space-y-6 text-center">
@@ -22,44 +17,51 @@ export function Contact({ data }: { data: Record<string, string> }) {
         </div>
 
         <div className="flex sm:flex-row flex-col justify-center items-center gap-4">
-          <button
+          <a
+            href={data.EMAIL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex justify-center items-center bg-primary betterhover:hover:bg-primary/90 disabled:opacity-50 shadow px-4 rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring h-9 font-medium text-primary-foreground text-sm whitespace-nowrap transition-colors cursor-target disabled:pointer-events-none"
-            onClick={() => handleChange(data.EMAIL)}
           >
             <Mail className="mr-2 w-4 h-4" />
             Get in touch
-          </button>
-          <button
+          </a>
+          <a
+            href={data.RESUME}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex justify-center items-center hover:bg-primary/10 disabled:opacity-50 shadow px-4 border border-primary rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring h-9 font-medium text-primary text-sm whitespace-nowrap transition-colors cursor-target disabled:pointer-events-none"
-            onClick={() => handleChange(data.RESUME)}
           >
             <FileText className="mr-2 w-4 h-4" />
             Download Resume
-          </button>
+          </a>
         </div>
 
         <div className="flex justify-center items-center gap-6 pt-2">
           <Link
-            href="#"
+            href={data.GITHUB}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
             className="text-gray-400 hover:text-white transition-colors"
-            onClick={() => handleChange(data.GITHUB)}
           >
             <Github className="w-5 h-5" />
           </Link>
           <Link
-            href="#"
+            href={data.LINKEDIN}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
             className="text-gray-400 hover:text-white transition-colors"
-            onClick={() => handleChange(data.LINKEDIN)}
           >
             <Linkedin className="w-5 h-5" />
           </Link>
           <Link
-            href="#"
+            href={data.EMAIL}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Email"
             className="text-gray-400 hover:text-white transition-colors"
-            onClick={(e) => {
-              e.preventDefault();
-              handleChange(data.EMAIL);
-            }}
           >
             <Mail className="w-5 h-5" />
           </Link>

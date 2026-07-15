@@ -35,11 +35,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Pragnyan Ramtha | AI Engineer",
     description: metaDescription,
-    url: "https://pragnyanramtha.xyz/",
+    url: "https://pragnyanramtha.dev/",
     type: "website",
     images: [
       {
-        url: "https://pragnyanramtha.xyz/opengraph-image.png",
+        url: "https://pragnyanramtha.dev/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Pragnyan Ramtha | AI Engineer",
@@ -50,8 +50,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pragnyan Ramtha | AI Engineer",
     description: metaDescription,
+    images: ["https://pragnyanramtha.dev/opengraph-image.png"],
   },
-  authors: [{ name: "Pragnyan Ramtha", url: "https://pragnyanramtha.xyz/" }],
+  authors: [{ name: "Pragnyan Ramtha", url: "https://pragnyanramtha.dev/" }],
   keywords: metaKeywords,
   creator: "Pragnyan Ramtha",
   publisher: "Pragnyan Ramtha",
@@ -66,7 +67,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Pragnyan Ramtha",
-    url: "https://pragnyanramtha.xyz/",
+    url: "https://pragnyanramtha.dev/",
     jobTitle: "AI Engineer | AI, Machine Learning, and Deep Learning",
     sameAs: [
       "https://github.com/pragnyanramtha",
@@ -84,10 +85,7 @@ export default function RootLayout({
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-        <meta name="description" content={metaDescription} />
-        <meta name="keywords" content={metaKeywords.join(", ")} />
-        <link rel="canonical" href="https://pragnyanramtha.xyz/" />
-        <meta name="author" content="Pragnyan Ramtha" />
+        <link rel="canonical" href="https://pragnyanramtha.dev/" />
         <meta
           name="darkreader-lock"
           content="darkreader-inline-stroke darkreader-inline-fill"

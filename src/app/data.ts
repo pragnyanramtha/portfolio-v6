@@ -10,6 +10,7 @@ import {
 export interface IProjectData {
   LIVE_PREVIEW?: string;
   GITHUB?: string;
+  LINK?: string;
   DESCRIPTION: string[];
   NOTE?: string;
   TECH_STACK: string[];
