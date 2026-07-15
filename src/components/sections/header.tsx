@@ -32,9 +32,11 @@ export function Header({ data }: { data: Record<string, string> }) {
             className="inline-flex justify-center items-center bg-primary betterhover:hover:bg-primary/90 disabled:opacity-50 shadow px-4 py-2 rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring h-9 font-medium text-primary-foreground text-sm whitespace-nowrap transition-colors disabled:pointer-events-none"
             change={() => handleChange(data.MEETING)}
             toChange={false}
-            ariaLabel="Inquire"
+            ariaLabel="Contact"
+
+
           >
-            Inquire
+            Contact
           </MovingElement>
           <MovingElement
             className="inline-flex justify-center items-center bg-primary betterhover:hover:bg-primary/90 disabled:opacity-50 shadow px-4 py-2 rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring h-9 font-medium text-primary-foreground text-sm whitespace-nowrap transition-colors disabled:pointer-events-none"

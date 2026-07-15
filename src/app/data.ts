@@ -32,7 +32,22 @@ export const DATA = {
 
   ABOUT_ME: {
     INTRO:
-      "I built **[Agent7](https://agent7.dev)** solo, a no-code platform to build AI agents that run long autonomous sessions. I've won 5 hackathons and previously held #1 on the **ARC-AGI** public leaderboard.",
+      "I built **[Agent7](https://agent7.dev)** solo, **a no-code platform to build AI agents** that run long autonomous sessions. **I've won 5 hackathons** and previously held **#1 on the ARC-AGI** public leaderboard. I've also contributed **70+ merged PRs** across the open-source ecosystem, including contributions to",
+    OPEN_SOURCE: [
+      { name: "openai-node", url: "https://github.com/openai/openai-node/pull/1885", highlight: true },
+      { name: "langgraphjs", url: "https://github.com/langchain-ai/langgraphjs/pull/2409", highlight: true },
+      { name: "pydantic-ai", url: "https://github.com/pydantic/pydantic-ai/pull/720", highlight: true },
+      { name: "promptfoo", url: "https://github.com/promptfoo/promptfoo/pull/9255" },
+      { name: "haystack", url: "https://github.com/deepset-ai/haystack/pull/11330" },
+      { name: "mem0", url: "https://github.com/mem0ai/mem0/pull/5170" },
+      { name: "chainlit", url: "https://github.com/Chainlit/chainlit/pull/2927" },
+      { name: "agno", url: "https://github.com/agno-agi/agno/pull/7948" },
+      { name: "fastmcp", url: "https://github.com/PrefectHQ/fastmcp/pull/4164" },
+      { name: "dify-plugins", url: "https://github.com/langgenius/dify-plugins/pulls?q=is%3Apr+author%3Apragnyanramtha+is%3Amerged" },
+      { name: "dstack", url: "https://github.com/dstackai/dstack/pull/3885" },
+      { name: "opik", url: "https://github.com/comet-ml/opik/pull/6735" },
+      { name: "mastra", url: "https://github.com/mastra-ai/mastra/pull/5098" },
+    ],
   },
 
   EXPERIENCE: {
@@ -42,8 +57,8 @@ export const DATA = {
       LOCATION: "Remote",
       DURATION: "2025 - Present",
       DESCRIPTION: [
-        "Built and launched a no-code AI agent platform entirely solo, from architecture to integrations to production deployment.",
-        "Agents run long autonomous sessions across 1,000+ app connectors, handling research, outreach, CRM, and cross-app workflows.",
+        "Shipped a **no-code AI agent platform** from zero to production solo, connecting **1,000+ app connectors** and orchestrating **20,000+ tools** by building the full stack: agent engine, approval system, integrations, and no-code frontend.",
+        "Enabled teams to hand off **20+ hours of weekly repeat work**, agents run autonomously for hours to days across research, outreach, CRM, and cross-app workflows by designing a long-running orchestration system with **approval-first safety controls**.",
       ],
       TECH_STACK: [
         "Next.js",
@@ -55,16 +70,15 @@ export const DATA = {
     },
     "Learnable India": {
       WEBSITE: "https://learnableindia.org/",
-      POSITION: "Computational Education Specialist",
+      POSITION: "Software Engineer",
       LOCATION: "Remote",
       DURATION: "Apr 2026 - Present",
       DESCRIPTION: [
-        "Researched accessibility gaps by teaching and mentoring visually impaired students, then adapted class workflows to make learning delivery more usable for blind learners.",
-        "Built Learnable India's previously non-existent digital infrastructure by shipping a learning portal and AI assistance workflows, creating a foundation for student support and class delivery.",
-        "Collaborated with TEDx speakers, educators, and internal teams to turn expert sessions into accessible learning experiences for students with diverse learning needs.",
+        "Built **assistive software for blind learners** from scratch, shipping a learning portal with **screen-reader compatible workflows** by engineering accessibility-first interfaces and AI-powered assistance tools.",
+        "Delivered **accessible class sessions for visually impaired students**, adapting tools and workflows for screen-reader compatibility across real-time sessions by **collaborating with educators and TEDx speakers** to design inclusive learning experiences.",
       ],
       TECH_STACK: [
-        "Computational Education",
+        "Accessibility Engineering",
         "Accessibility",
         "Python",
         "Learning Portals",
@@ -91,13 +105,13 @@ export const DATA = {
       ],
     },
     "Six Axis Studios": {
-      POSITION: "Machine Learning Intern",
-      LOCATION: "Greater Hyderabad Area - Remote",
+      POSITION: "ML Engineer (Freelance)",
+      LOCATION: "Remote",
       DURATION: "Feb 2025 - May 2025",
       DESCRIPTION: [
-        "Researched world-model approaches for architecture workflows to generate CAD-style design outputs from spatial context and architect design intent.",
-        "Prototyped ML pipelines that translated early architectural concepts into structured geometry, creating a faster path from design exploration to CAD handoff.",
-        "Evaluated generated layouts against architectural constraints to improve reliability before model outputs were used in downstream design workflows.",
+        "Researched **world-model approaches** for architecture workflows to generate **CAD-style design outputs** from spatial context and architect design intent.",
+        "Prototyped **ML pipelines** that translated early architectural concepts into structured geometry, creating a faster path from design exploration to **CAD handoff**.",
+        "Evaluated generated layouts against **architectural constraints** to improve reliability before model outputs were used in downstream design workflows.",
       ],
       TECH_STACK: [
         "Artificial Intelligence",
@@ -344,31 +358,37 @@ export const DATA = {
   },
 
   SKILLS: {
-    Languages: ["Python", "C++", "Bash", "SQL", "TypeScript"],
-    "AI/ML Tools": [
+    Languages: ["Python", "TypeScript", "Rust", "C", "SQL", "Bash", "Go"],
+    "AI/ML": [
       "PyTorch",
       "Transformers",
       "Unsloth",
-      "NumPy",
-      "Pandas",
-      "Scikit-learn",
       "PEFT/QLoRA",
+      "RAG Pipelines",
+      "AI Agents",
+      "LLM Fine-tuning",
       "CUDA",
     ],
-    Infrastructure: ["GCP", "Azure", "Docker", "Linux (Arch)", "Git"],
-    Certifications: [
-      "Machine learning certification (Stanford)",
-      "CS50: comp. Sci. (Harvard University)",
+    "Full-Stack": [
+      "Next.js",
+      "React",
+      "Node.js",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "REST APIs",
+      "SaaS Architecture",
     ],
+    Infrastructure: ["GCP", "Docker", "Linux (Arch)", "Nix", "Git", "CI/CD"],
     Achievements: [
       "Prev. #1 on ARC-AGI Public Leaderboard",
+      "70+ merged open-source PRs",
       "Winner, NIAT RAG Challenge",
       "Finalist, Smallest AI × IIT G",
-      "Winner, IEEE Summer of Code (IEEESOC) Hackathon 2025",
+      "Winner, IEEE Summer of Code 2025",
       "Winner, Empathy Encryption Hackathon 2025",
       "Winner, Daydream Hyderabad @ Hackclub 2025",
       "Top 0.5% Finalist, Shell AI Hackathon 2025",
     ],
-    "Developer Tools": ["uv", "Neovim", "Arch Linux"],
+    "Developer Tools": ["Neovim", "Arch Linux", "uv"],
   },
 };
