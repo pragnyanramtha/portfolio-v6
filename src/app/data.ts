@@ -190,8 +190,8 @@ export const DATA = {
       },
     "Speeding Up LLM Inference Using Quantum Computing Techniques": {
       DATE: "2026",
-      VENUE: "Under Research",
-      LINK: "#",
+      VENUE: "In Progress",
+      LINK: "",
       DESCRIPTION:
         "Exploring quantum-inspired algorithms and quantum computational primitives to accelerate inference in large language models, investigating quantum annealing for attention mechanisms and variational quantum circuits for efficient token generation.",
     },
@@ -388,6 +388,10 @@ export const DATA = {
       "Winner, Empathy Encryption Hackathon 2025",
       "Winner, Daydream Hyderabad @ Hackclub 2025",
       "Top 0.5% Finalist, Shell AI Hackathon 2025",
+    ],
+    Certifications: [
+      "Machine Learning Specialization (Stanford)",
+      "CS50: Computer Science (Harvard University)",
     ],
     "Developer Tools": ["Neovim", "Arch Linux", "uv"],
   },
