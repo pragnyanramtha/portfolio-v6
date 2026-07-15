@@ -22,8 +22,7 @@ export const DATA = {
     NAME: "Pragnyan Ramtha",
     AGE: "18",
     PRONOUN: "he/him",
-    HEADLINE:
-      "Founder @agent7.dev · Prev. #1 on ARC-AGI Public Leaderboard",
+    HEADLINE: "Founder @agent7.dev • Prev. #1 on ARC-AGI Public Leaderboard",
     RESUME: "/resume.pdf",
     MEETING: "https://cal.com/pragnyanramtha",
     EMAIL: "mailto:pragnyanramtha@gmail.com",
@@ -33,11 +32,11 @@ export const DATA = {
 
   ABOUT_ME: {
     INTRO:
-      "I built Agent7 solo, a no-code platform to build AI agents that run long autonomous sessions. I've won 5 hackathons and previously held #1 on the ARC-AGI public leaderboard.",
+      "I built **[Agent7](https://agent7.dev)** solo, a no-code platform to build AI agents that run long autonomous sessions. I've won 5 hackathons and previously held #1 on the **ARC-AGI** public leaderboard.",
   },
 
   EXPERIENCE: {
-    "Agent7": {
+    Agent7: {
       WEBSITE: "https://agent7.dev",
       POSITION: "Founder",
       LOCATION: "Remote",
@@ -118,7 +117,13 @@ export const DATA = {
         "Built a no-code AI agent platform from scratch, solo. Agents connect to 1,000+ apps and run autonomous sessions for hours or days.",
         "Handles research, outreach, CRM updates, lead qualification, and cross-app workflows from plain English instructions.",
       ],
-      TECH_STACK: ["Next.js", "TypeScript", "AI Agents", "Integrations", "SaaS"],
+      TECH_STACK: [
+        "Next.js",
+        "TypeScript",
+        "AI Agents",
+        "Integrations",
+        "SaaS",
+      ],
     },
     "AIMO-3: Efficient Reasoning via LLM Fine-Tuning": {
       NOTE: "Dec 2025",

@@ -9,9 +9,24 @@ export function renderBoldText(text: string) {
   const parts = text.split(/(\*\*.*?\*\*)/g);
   return parts.map((part, index) => {
     if (part.startsWith('**') && part.endsWith('**')) {
+      const inner = part.slice(2, -2);
+      const linkMatch = /^\[(.+?)\]\((.+?)\)$/.exec(inner);
+      if (linkMatch) {
+        return (
+          <a
+            key={index}
+            href={linkMatch[2]}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold text-primary italic underline underline-offset-4 hover:text-primary/80 transition-colors"
+          >
+            {linkMatch[1]}
+          </a>
+        );
+      }
       return (
         <strong key={index} className="font-bold text-primary italic underline-offset-4">
-          {part.slice(2, -2)}
+          {inner}
         </strong>
       );
     }
