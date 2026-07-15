@@ -10,7 +10,7 @@ export function AboutMe({ data }: { data: Record<string, string> }) {
           <span className="hidden sm:inline">{data.EXPERTISE}</span>
         </span>
 
-        {/* <span>{data.BLOG}</span> */}
+
       </p>
       
     </div>

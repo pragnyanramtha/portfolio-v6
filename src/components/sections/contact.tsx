@@ -58,7 +58,7 @@ export function Contact({ data }: { data: Record<string, string> }) {
             className="text-gray-400 hover:text-white transition-colors"
             onClick={(e) => {
               e.preventDefault();
-              handleChange("mailto:pragnyanramtha@gmail.com");
+              handleChange(data.EMAIL);
             }}
           >
             <Mail className="w-5 h-5" />

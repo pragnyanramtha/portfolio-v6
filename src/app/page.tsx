@@ -2,7 +2,6 @@ import { DATA } from "@/app/data";
 import {
   AboutMe,
   Blogs,
-  ResearchPapers,
   Contact,
   Experience,
   Footer,
@@ -12,6 +11,7 @@ import {
   Skills,
 } from "@/components/sections";
 import { GitHubContributions } from "@/components/sections/github-contribution";
+import { ResearchPapers } from "@/components/sections/research-papers";
 import { CursorLayer } from "@/components/ui/cursor-layer";
 import GridPattern from "@/components/ui/grid-pattern";
 import { getBlogPosts } from "@/lib/blogs";
