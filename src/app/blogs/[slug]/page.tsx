@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       authors: ["Pragnyan Ramtha"],
       images: [
         {
-          url: `${baseUrl}/opengraph-image.png`,
+          url: `${baseUrl}/blogs/${post.SLUG}/opengraph-image`,
           width: 1200,
           height: 630,
           alt: post.TITLE,
@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       card: "summary_large_image",
       title: post.TITLE,
       description,
-      images: [`${baseUrl}/opengraph-image.png`],
+      images: [`${baseUrl}/blogs/${post.SLUG}/opengraph-image`],
     },
   };
 }
