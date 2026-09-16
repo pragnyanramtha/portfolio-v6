@@ -32,7 +32,7 @@ export const DATA = {
 
   ABOUT_ME: {
     INTRO:
-      "I'm an **AI Engineer** specializing in **LLM fine-tuning** (PEFT/QLoRA), **autonomous AI agent** systems, and **model compression**. I built **[Agent7](https://agent7.dev)** solo — a no-code platform for long-running AI agents — and previously held **#1 on the ARC-AGI** public leaderboard. **I've won 5 hackathons**, contributed **70+ merged open-source PRs** to projects like openai-node, langgraphjs, and pydantic-ai, and I'm focused on building cost-efficient AI systems that ship to production. My core specializations: retrieval-augmented generation (RAG), quantization (GPTQ, mixed-precision), and building autonomous AI agent frameworks.",
+      "I'm an **AI Engineer** specializing in **LLM fine-tuning** (PEFT/QLoRA), **autonomous AI agent** systems, and **model compression**. I built **[Agent7](https://agent7.dev)** solo — a no-code platform for long-running AI agents. I'm focused on building cost-efficient AI systems that ship to production. My core specializations: retrieval-augmented generation (RAG), quantization (GPTQ, mixed-precision), and building autonomous AI agent frameworks.",
     OPEN_SOURCE: [
       { name: "openai-node", url: "https://github.com/openai/openai-node/pull/1885", highlight: true },
       { name: "langgraphjs", url: "https://github.com/langchain-ai/langgraphjs/pull/2409", highlight: true },
