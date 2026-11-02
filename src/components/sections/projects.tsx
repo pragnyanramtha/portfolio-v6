@@ -45,7 +45,7 @@ export function Projects({ data }: { data: Record<string, IProjectData> }) {
                       {value.LINK && (value.LIVE_PREVIEW || value.GITHUB) && key.includes("AIMO") && (
                         <div className="flex items-center">
                           <Link
-                            href="/blogs/how-i-won-a-solver-medal-at-aimo3"
+                            href="/blogs/what-i-built-for-aimo3"
                             className="flex items-center gap-1 text-primary hover:text-primary/80 transition-colors"
                           >
                             Read Case Study <ArrowUpRight size={18} />

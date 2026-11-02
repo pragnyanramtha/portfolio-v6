@@ -51,6 +51,25 @@ export const DATA = {
   },
 
   EXPERIENCE: {
+    Parsewave: {
+      WEBSITE: "https://parsewave.ai",
+      POSITION: "AI Researcher",
+      LOCATION: "Remote",
+      DURATION: "Aug 2026 - Nov 2026",
+      DESCRIPTION: [
+        "Built **end-to-end post-training data pipelines** for **frontier AI labs**, curating expert SFT and RLHF datasets across reasoning, tool use, and code synthesis.",
+        "Created and audited **evaluation benchmarks** and **agentic coding tasks** for private frontier models, using deterministic execution harnesses, test-based verifiers, and contamination checks to prevent **reward hacking**.",
+        "Audited multi-turn agent trajectories and verification loops to improve data quality and post-training signal.",
+      ],
+      TECH_STACK: [
+        "Post-Training",
+        "LLM Evaluation",
+        "Benchmarks",
+        "RLHF",
+        "SFT",
+        "Agent Harnesses",
+      ],
+    },
     Agent7: {
       WEBSITE: "https://agent7.dev",
       POSITION: "Founder",
@@ -143,7 +162,7 @@ export const DATA = {
       NOTE: "Dec 2025",
       LINK: "https://huggingface.co/pragnyanramtha/phi-4-math-rplus",
       DESCRIPTION: [
-        "**AIMO-3 Solver Medalist** — fine-tuned Phi-4 (14B) on CoT and TiR datasets to optimize multi-step mathematical reasoning, achieving **90% accuracy** on competition benchmarks rivaling 125B parameter models with a fraction of the compute.",
+        "Competed in **AIMO-3**, fine-tuning Phi-4 (14B) on CoT and TiR datasets to optimize multi-step mathematical reasoning, achieving **90% accuracy** on competition benchmarks rivaling 125B parameter models with a fraction of the compute.",
       ],
       TECH_STACK: ["Phi-4", "Fine-tuning", "CoT/TiR", "PEFT"],
       IMAGE: AimoImage,
@@ -378,9 +397,9 @@ export const DATA = {
     ],
     Infrastructure: ["GCP", "Docker", "Linux (Arch)", "Nix", "Git", "CI/CD"],
     Achievements: [
-      "Top 5, OpenAI Parameter Golf (1.1271 BPB)",
+      "OpenAI Parameter Golf: 1.1271 BPB",
       "Prev. #1 on ARC-AGI Public Leaderboard",
-      "AIMO-3 Solver Medalist",
+      "Competed in AIMO-3 (AI Mathematical Olympiad)",
       "70+ merged open-source PRs",
       "Winner, NIAT RAG Challenge",
       "Finalist, Smallest AI × IIT G",

@@ -1,6 +1,6 @@
 # Pragnyan Ramtha | AI Engineer Full Context
 
-AI Engineer specializing in LLM Fine-Tuning (PEFT/QLoRA), Autonomous AI Agent Systems, and Cost-Efficient Model Compression (GPTQ/Mixed-Precision). AIMO-3 Solver Medalist, ARC-AGI #1 Ranker, and Top 5 OpenAI Parameter Golf.
+AI Engineer specializing in LLM Fine-Tuning (PEFT/QLoRA), Autonomous AI Agent Systems, and Cost-Efficient Model Compression (GPTQ/Mixed-Precision). Previously AI Researcher at Parsewave. ARC-AGI #1 Ranker; competed in AIMO-3 and OpenAI Parameter Golf.
 
 ## Contact
 - GitHub: https://github.com/pragnyanramtha
@@ -17,9 +17,10 @@ AI Engineer specializing in LLM Fine-Tuning (PEFT/QLoRA), Autonomous AI Agent Sy
 - **MLOps:** High-availability serverless backends on GCP with aggressive cost-cutting logic.
 
 ## Key Projects & Achievements
+- **Parsewave (AI Researcher, Aug-Nov 2026):** Built post-training datasets, evaluation benchmarks and agentic coding tasks delivered to frontier AI labs.
 - **Agent7:** Solo-built no-code AI agent platform connecting 1,000+ app connectors, orchestrating 20,000+ tools, running autonomous sessions for hours to days.
-- **AIMO-3 Solver Medalist:** Fine-tuned Phi-4 (14B) to 90% reasoning accuracy on competition benchmarks rivaling 125B parameter models.
-- **OpenAI Parameter Golf (Top 5):** Achieved 1.1271 BPB on FineWeb using XSA4 + EMA + GPTQ-Int6 stack.
+- **AIMO-3:** Competed with a fine-tuned Phi-4 (14B) to 90% reasoning accuracy on competition benchmarks rivaling 125B parameter models.
+- **OpenAI Parameter Golf:** Achieved 1.1271 BPB on FineWeb using XSA4 + EMA + GPTQ-Int6 stack.
 - **ARC-AGI-2 (#1 Rank):** Adaptation of budget-aware solving patterns and Test-Time Training for fluid intelligence benchmarks.
 - **Personality Clone:** Fine-tuned LLM with QLoRA + siamese network architecture achieving 92% style replication accuracy (28% improvement over baseline).
 - **Agentic AI Developer:** Built GCP serverless AI orchestration, Gemini API workflows, and RAG systems at Reputation Dao.
@@ -37,7 +38,7 @@ AI Engineer specializing in LLM Fine-Tuning (PEFT/QLoRA), Autonomous AI Agent Sy
 ## Blog Summaries
 - **Why OpenAI Sent Me $500 (Parameter Golf):** Technical breakdown of XSA4, EMA, and GPTQ-Int6 for 16MB model training.
 - **How I Reached #1 on ARC-AGI-2:** Test-Time Training strategy for fluid intelligence benchmarks.
-- **How I Won a Solver Medal at AIMO3:** Parallel agentic loops with sandboxed code execution and budget-aware time allocation.
+- **What I Built for AIMO3:** Parallel agentic loops with sandboxed code execution and budget-aware time allocation.
 - **Fine-Tuning Reasoning:** Insights on data quality over quantity and benchmark hygiene.
 - **LLM Latency:** Systems-level approach to breaking latency budgets across retrieval and inference.
 
