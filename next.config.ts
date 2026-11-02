@@ -13,6 +13,16 @@ const nextConfig: NextConfig = {
     removeConsole: process.env.NODE_ENV === "production",
   },
 
+  async redirects() {
+    return [
+      {
+        source: "/blogs/how-i-won-a-solver-medal-at-aimo3",
+        destination: "/blogs/what-i-built-for-aimo3",
+        permanent: true,
+      },
+    ];
+  },
+
   async headers() {
     return [
       {

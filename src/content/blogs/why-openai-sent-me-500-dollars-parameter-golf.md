@@ -10,13 +10,13 @@ topics:
   - GPTQ
   - Model Compression
 description:
-  - How I built XSA4 + EMA + GPTQ-Int6 to place top-5 globally in OpenAI's Parameter Golf challenge.
+  - How I built XSA4 + EMA + GPTQ-Int6 for OpenAI's Parameter Golf challenge.
   - Explaining bits-per-byte, Cross-Sparse Attention, EMA smoothing, and what GPTQ actually does under the hood.
 ---
 
 In March 2026, OpenAI launched "Parameter Golf." The challenge was simple: train the best language model you can that fits inside exactly 16MB, and trains in under 10 minutes on 8xH100 GPUs. 
 
-They judge the models on a single metric: bits-per-byte (BPB) on a held-out slice of the FineWeb dataset. Their baseline scored 1.2244. I submitted a PR on March 22nd that scored 1.1271 BPB, landing in the top 5 globally. OpenAI sent me 500 bucks for the trouble.
+They judge the models on a single metric: bits-per-byte (BPB) on a held-out slice of the FineWeb dataset. Their baseline scored 1.2244. I submitted a PR on March 22nd that scored 1.1271 BPB. OpenAI sent me 500 bucks for the trouble.
 
 My submission was a stack of three techniques: Cross-Sparse Attention (XSA4), Exponential Moving Average (EMA), and GPTQ Int6 quantization. Here is exactly what those are and why putting them together worked.
 

@@ -42,6 +42,13 @@ He is known for his work in mathematical reasoning (AIMO3 Catalyst), abstract pa
 
 ## 📈 Professional Experience
 
+### Parsewave | AI Researcher
+*Aug 2026 - Nov 2026*
+**Core Impact:**
+- **Post-Training Data:** Built end-to-end post-training data pipelines for frontier AI labs, curating expert SFT and RLHF datasets across reasoning, tool use, and code synthesis.
+- **Evaluation Benchmarks:** Created and audited benchmarks and agentic coding tasks for private frontier models, using deterministic execution harnesses, test-based verifiers, and contamination checks to prevent reward hacking.
+- **Trajectory Audits:** Audited multi-turn agent trajectories and verification loops to improve data quality and post-training signal.
+
 ### Learnable India | Computational Education Specialist
 *Apr 2026 - Present*
 **Core Impact:**
@@ -93,15 +100,15 @@ He is known for his work in mathematical reasoning (AIMO3 Catalyst), abstract pa
 
 ### [Why OpenAI Sent Me $500 for a Research Project](/blogs/why-openai-sent-me-500-dollars-parameter-golf)
 *Apr 2026*
-On March 18, 2026, OpenAI launched Parameter Golf, a competition to train the best language model that fits inside 16MB and trains in under 10 minutes on 8×H100 GPUs. My submission was called XSA4_EMA_GPQ. Three techniques stacked on top of each other, each one doing a different job: **Cross-Sparse Attention (XSA4)** for architectural efficiency, **Exponential Moving Average (EMA)** for training stability, and **GPTQ Int6** for extreme compression. My score: 1.1271 BPB. Top 5 on the global leaderboard.
+On March 18, 2026, OpenAI launched Parameter Golf, a competition to train the best language model that fits inside 16MB and trains in under 10 minutes on 8×H100 GPUs. My submission was called XSA4_EMA_GPQ. Three techniques stacked on top of each other, each one doing a different job: **Cross-Sparse Attention (XSA4)** for architectural efficiency, **Exponential Moving Average (EMA)** for training stability, and **GPTQ Int6** for extreme compression. My score: 1.1271 BPB.
 
 ### [How I Reached #1 on ARC-AGI-2](/blogs/how-i-reached-number-1-on-arc-agi-2)
 *Apr 2026*
 ARC-AGI-2 is a benchmark designed to measure fluid intelligence in AI systems. The core insight behind the winning approach is that each ARC puzzle is its own tiny dataset. Instead of treating inference as a static lookup, I fine-tune the model on those examples, with heavy augmentation, before running inference on the test grid. This is **Test-Time Training (TTT)**: the model temporarily learns the specific transformation rule for this puzzle, then solves it.
 
-### [How I Won a Solver Medal at AIMO3](/blogs/how-i-won-a-solver-medal-at-aimo3)
+### [What I Built for AIMO3](/blogs/what-i-built-for-aimo3)
 *Apr 2026*
-AIMO3 is a $2.2M Kaggle competition to make AI solve International Mathematical Olympiad problems. The winning design: run 8 independent attempts per problem in parallel, each an agentic loop where the model can call a Python tool as many times as it wants, collect all final answers, and pick the one with the most weighted votes. Used **Gemma-4-31B**, parallel sandboxed code execution, and a budget-aware time allocator.
+AIMO3 is a $2.2M Kaggle competition to make AI solve International Mathematical Olympiad problems. The design: run 8 independent attempts per problem in parallel, each an agentic loop where the model can call a Python tool as many times as it wants, collect all final answers, and pick the one with the most weighted votes. Used **Gemma-4-31B**, parallel sandboxed code execution, and a budget-aware time allocator.
 
 ---
 

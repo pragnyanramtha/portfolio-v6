@@ -1,5 +1,5 @@
 ---
-title: "How I Won a Solver Medal at AIMO3"
+title: "What I Built for AIMO3"
 date: "Apr 2026"
 readTime: "6 min read"
 order: 3
@@ -11,12 +11,12 @@ topics:
   - Kaggle
 description:
   - A breakdown of the system I built for AIMO3, a $2.2M Kaggle math competition. 
-  - I used Gemma-4-31B, parallel sandboxed execution, weighted voting, and a nasty budget-aware time allocator to scrape a solver medal.
+  - I used Gemma-4-31B, parallel sandboxed execution, weighted voting, and a nasty budget-aware time allocator to compete under a tight compute budget.
 ---
 
 AIMO3 (the AI Mathematical Olympiad Progress Prize) is a $2.2M Kaggle competition where your model has to solve International Mathematical Olympiad problems. You get a single H100, a five-hour time limit, zero internet access, and 50 brutal math problems. The output has to be a single integer between 0 and 99999. No partial credit. 
 
-Previous winners used massive GPU clusters to score 34/50. This time, everything had to run in a single offline Kaggle notebook, and the difficulty was cranked up to full IMO level—heavy number theory, combinatorics, the works. I managed to walk away with a solver medal. Here's how I did it.
+Previous winners used massive GPU clusters to score 34/50. This time, everything had to run in a single offline Kaggle notebook, and the difficulty was cranked up to full IMO level—heavy number theory, combinatorics, the works. I took part to see how far one offline notebook could go. Here's what I built and what I learned.
 
 ## The first few attempts
 
