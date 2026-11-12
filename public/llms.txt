@@ -1,6 +1,6 @@
 # Pragnyan Ramtha | AI Engineer Full Context
 
-AI Engineer specializing in LLM Fine-Tuning (PEFT/QLoRA), Autonomous AI Agent Systems, and Cost-Efficient Model Compression (GPTQ/Mixed-Precision). Previously AI Researcher at Parsewave. ARC-AGI #1 Ranker; competed in AIMO-3 and OpenAI Parameter Golf.
+AI Engineer specializing in LLM Fine-Tuning (PEFT/QLoRA), Autonomous AI Agent Systems, and Cost-Efficient Model Compression (GPTQ/Mixed-Precision). Previously AI Researcher at Parsewave. Author of HumanBench, an open benchmark of everyday writing. ARC-AGI #1 Ranker; competed in AIMO-3 and OpenAI Parameter Golf.
 
 ## Contact
 - GitHub: https://github.com/pragnyanramtha
@@ -17,20 +17,25 @@ AI Engineer specializing in LLM Fine-Tuning (PEFT/QLoRA), Autonomous AI Agent Sy
 - **MLOps:** High-availability serverless backends on GCP with aggressive cost-cutting logic.
 
 ## Key Projects & Achievements
+- **HumanBench (Nov 2026):** Open benchmark asking whether AI can write like a human. 212 everyday writing tasks, 11 models, three samples per task. An output counts only if it passes programmatic checks, a cross-lab LLM judge and an AI-text detector calibrated on 801 human-written texts. Top model passes all three on 23.1% of outputs. Leaderboard: https://humanbench.agent7.dev | Code: https://github.com/pragnyanramtha/human-bench
 - **Parsewave (AI Researcher, Aug-Nov 2026):** Built post-training datasets, evaluation benchmarks and agentic coding tasks delivered to frontier AI labs.
+- **agentlink:** Open-source CLI and daemon that lets AI coding agents (Claude Code, Codex, OpenCode, Cursor, Gemini CLI and others) message each other on one machine, across machines and across a team, with end-to-end encrypted team messages. https://github.com/pragnyanramtha/agentlink
+- **agent-ui:** Self-hosted, mobile-friendly web UI for coding-agent sessions on your own server, with live session view, approvals, diffs and a web terminal. https://github.com/pragnyanramtha/agent-ui
 - **Agent7:** Solo-built no-code AI agent platform connecting 1,000+ app connectors, orchestrating 20,000+ tools, running autonomous sessions for hours to days.
 - **AIMO-3:** Competed with a fine-tuned Phi-4 (14B) to 90% reasoning accuracy on competition benchmarks rivaling 125B parameter models.
-- **OpenAI Parameter Golf:** Achieved 1.1271 BPB on FineWeb using XSA4 + EMA + GPTQ-Int6 stack.
+- **OpenAI Parameter Golf:** Submitted an XSA4 + EMA + late QAT + GPTQ-lite stack scoring 1.1325 BPB on FineWeb against a 1.2244 baseline. PR: https://github.com/openai/parameter-golf/pull/531
 - **ARC-AGI-2 (#1 Rank):** Adaptation of budget-aware solving patterns and Test-Time Training for fluid intelligence benchmarks.
 - **Personality Clone:** Fine-tuned LLM with QLoRA + siamese network architecture achieving 92% style replication accuracy (28% improvement over baseline).
 - **Agentic AI Developer:** Built GCP serverless AI orchestration, Gemini API workflows, and RAG systems at Reputation Dao.
 
-## Open Source Contributions (70+ merged PRs)
+## Open Source Contributions (55+ merged PRs)
+- Full list: https://github.com/pulls?q=is%3Apr+author%3Apragnyanramtha+is%3Amerged+-user%3Apragnyanramtha
 - openai-node, langgraphjs, pydantic-ai (highlighted)
 - promptfoo, haystack, mem0, chainlit, agno, fastmcp, dify-plugins, dstack, opik, mastra
 - Gemini CLI (sudo bug fix), Scrapy (duplicate filter reliability patch)
 
 ## Research Papers
+- **HumanBench: Can AI Write Like a Human?** — Benchmark paper (v0.1 research preview, 2026): three-gate scoring, public and held-out splits, bootstrap intervals, and a full limitations section. https://humanbench.agent7.dev/humanbench.pdf
 - **Scaling Context Windows to Infinity** — Analysis of position encoding and memory-efficient inference for long-sequence processing (Academia.edu, 2026).
 - **Unlocking Societal Trends in Aadhaar Enrolment** — ML approach to fraud detection in biometric systems (Academia.edu, 2026).
 - **Quantum-Inspired LLM Inference** — Investigating variational quantum circuits for token generation acceleration (In Progress).
