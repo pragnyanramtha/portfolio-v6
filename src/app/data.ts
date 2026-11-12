@@ -32,11 +32,11 @@ export const DATA = {
 
   ABOUT_ME: {
     INTRO:
-      "I'm an **AI Engineer** specializing in **LLM fine-tuning** (PEFT/QLoRA), **autonomous AI agent** systems, and **model compression**. I built **[Agent7](https://agent7.dev)** solo — a no-code platform for long-running AI agents. I'm focused on building cost-efficient AI systems that ship to production. My core specializations: retrieval-augmented generation (RAG), quantization (GPTQ, mixed-precision), and building autonomous AI agent frameworks.",
+      "I'm an **AI Engineer** specializing in **LLM fine-tuning** (PEFT/QLoRA), **autonomous AI agent** systems, and **model compression**. I built **[Agent7](https://agent7.dev)** solo — a no-code platform for long-running AI agents. I recently released **[HumanBench](https://humanbench.agent7.dev)**, an open benchmark that tests whether frontier models can do everyday writing tasks without being flagged as AI-written. I'm focused on building cost-efficient AI systems that ship to production. My core specializations: retrieval-augmented generation (RAG), quantization (GPTQ, mixed-precision), and building autonomous AI agent frameworks.",
     OPEN_SOURCE: [
       { name: "openai-node", url: "https://github.com/openai/openai-node/pull/1885", highlight: true },
       { name: "langgraphjs", url: "https://github.com/langchain-ai/langgraphjs/pull/2409", highlight: true },
-      { name: "pydantic-ai", url: "https://github.com/pydantic/pydantic-ai/pull/720", highlight: true },
+      { name: "pydantic-ai", url: "https://github.com/pydantic/pydantic-ai/pull/5490", highlight: true },
       { name: "promptfoo", url: "https://github.com/promptfoo/promptfoo/pull/9255" },
       { name: "haystack", url: "https://github.com/deepset-ai/haystack/pull/11330" },
       { name: "mem0", url: "https://github.com/mem0ai/mem0/pull/5170" },
@@ -46,7 +46,7 @@ export const DATA = {
       { name: "dify-plugins", url: "https://github.com/langgenius/dify-plugins/pulls?q=is%3Apr+author%3Apragnyanramtha+is%3Amerged" },
       { name: "dstack", url: "https://github.com/dstackai/dstack/pull/3885" },
       { name: "opik", url: "https://github.com/comet-ml/opik/pull/6735" },
-      { name: "mastra", url: "https://github.com/mastra-ai/mastra/pull/5098" },
+      { name: "mastra", url: "https://github.com/mastra-ai/mastra/pull/16687" },
     ],
   },
 
@@ -143,6 +143,22 @@ export const DATA = {
   },
 
   PROJECTS: {
+    "HumanBench: Can AI Write Like a Human?": {
+      NOTE: "Nov 2026",
+      LIVE_PREVIEW: "https://humanbench.agent7.dev",
+      GITHUB: "https://github.com/pragnyanramtha/human-bench",
+      DESCRIPTION: [
+        "Designed and released an open benchmark of **212 everyday writing tasks**, run on **11 models** with three samples per task. The leaderboard, the paper, the task cards and every public answer are published.",
+        "An output counts only if it passes three gates: programmatic checks, a cross-lab **LLM judge**, and an AI-text detector calibrated on 801 human-written texts. The top model passes all three on **23.1%** of outputs. Scores are reported on public and **held-out** tasks with 95% bootstrap intervals.",
+      ],
+      TECH_STACK: [
+        "Python",
+        "LLM Evaluation",
+        "Benchmark Design",
+        "LLM-as-Judge",
+        "AI-Text Detection",
+      ],
+    },
     Agent7: {
       NOTE: "2025 - Present",
       LINK: "https://agent7.dev",
@@ -156,6 +172,37 @@ export const DATA = {
         "AI Agents",
         "Integrations",
         "SaaS",
+      ],
+    },
+    agentlink: {
+      NOTE: "Sep 2026 - Present",
+      LIVE_PREVIEW: "https://agentlink.agent7.dev",
+      GITHUB: "https://github.com/pragnyanramtha/agentlink",
+      DESCRIPTION: [
+        "Open-source CLI and daemon that lets **AI coding agents message each other**: Claude Code, Codex, OpenCode, Cursor, Gemini CLI and others, on one machine, across machines, and across a team.",
+        "Delivers messages into running sessions, wakes idle agents, and shows who is busy or offline. Team messages are **end-to-end encrypted per device**, so the relay only sees ciphertext. Ships with loop guards, rate limits and a secret scanner.",
+      ],
+      TECH_STACK: [
+        "TypeScript",
+        "Node.js",
+        "MCP",
+        "Agent Tooling",
+        "E2E Encryption",
+      ],
+    },
+    "agent-ui": {
+      NOTE: "Oct 2026",
+      GITHUB: "https://github.com/pragnyanramtha/agent-ui",
+      DESCRIPTION: [
+        "Self-hosted, **mobile-friendly web UI** for coding-agent sessions running on your own server: Claude Code, with adapters for Codex, OpenCode, Cursor CLI, Devin CLI, Kimi Code, Gemini CLI and Antigravity.",
+        "Live view of zellij and tmux sessions from a phone, starting and resuming sessions in the browser, tool calls, diffs and approvals, and a full web terminal behind password login.",
+      ],
+      TECH_STACK: [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Claude Agent SDK",
       ],
     },
     "AIMO-3: Efficient Reasoning via LLM Fine-Tuning": {
@@ -190,6 +237,13 @@ export const DATA = {
   },
 
   RESEARCH_PAPERS: {
+    "HumanBench: Can AI Write Like a Human?": {
+      DATE: "2026",
+      VENUE: "Research preview v0.1",
+      LINK: "https://humanbench.agent7.dev/humanbench.pdf",
+      DESCRIPTION:
+        "A benchmark of 212 everyday writing tasks, run on 11 models with three samples each. An output counts only if it passes programmatic checks, a cross-lab LLM judge, and an open AI-text detector calibrated on 801 human-written texts. The best model passes all three on 23.1% of outputs. The paper reports public and held-out scores with bootstrap intervals and sets out the benchmark's limitations.",
+    },
     "Scaling Context Windows to Infinity: A Comprehensive Study of Position Encoding, Attention Mechanisms, Memory-Efficient Inference, and Context Reduction Techniques in Large Language Models":
       {
         DATE: "2026",
@@ -397,10 +451,10 @@ export const DATA = {
     ],
     Infrastructure: ["GCP", "Docker", "Linux (Arch)", "Nix", "Git", "CI/CD"],
     Achievements: [
-      "OpenAI Parameter Golf: 1.1271 BPB",
+      "OpenAI Parameter Golf: 1.1325 BPB (PR #531)",
       "Prev. #1 on ARC-AGI Public Leaderboard",
       "Competed in AIMO-3 (AI Mathematical Olympiad)",
-      "70+ merged open-source PRs",
+      "55+ merged open-source PRs",
       "Winner, NIAT RAG Challenge",
       "Finalist, Smallest AI × IIT G",
       "Winner, IEEE Summer of Code 2025",

@@ -20,7 +20,7 @@
 
 **Pragnyan Ramtha** is an AI/ML Engineer specializing in the design and optimization of Large Language Models (LLMs), specifically focusing on **Cost-Efficient Reasoning Systems** and **Mixed-Precision Quantization**. 
 
-He is known for his work in mathematical reasoning (AIMO3 Catalyst), abstract pattern recognition (ARC-AGI-2), and extreme model compression (OpenAI Parameter Golf).
+He is known for his work in mathematical reasoning (AIMO3 Catalyst), abstract pattern recognition (ARC-AGI-2), and extreme model compression (OpenAI Parameter Golf). In November 2026 he released **HumanBench**, an open benchmark that tests whether frontier models can do everyday writing tasks without being flagged as AI-written.
 
 ### Technical Philosophies:
 - **Budget-Aware Allocation:** Treating compute and wall-clock time as a finite resource to be greedily allocated based on problem difficulty.
@@ -74,6 +74,29 @@ He is known for his work in mathematical reasoning (AIMO3 Catalyst), abstract pa
 
 ## 🏆 In-Depth Project Case Studies
 
+### HumanBench: Can AI Write Like a Human?
+**Goal:** Measure whether a model can do an everyday writing task and not be flagged as AI-written.
+**Methodology:**
+- 212 tasks (132 public, 80 held-out), 11 models, three samples per task.
+- Three gates per output: programmatic checks, a cross-lab LLM judge, and an AI-text detector calibrated on 801 human-written texts.
+- The top model passes all three on **23.1%** of outputs; scores carry 95% bootstrap intervals.
+- Links: [Leaderboard](https://humanbench.agent7.dev) · [Paper](https://humanbench.agent7.dev/humanbench.pdf) · [Code](https://github.com/pragnyanramtha/human-bench)
+
+### agentlink: Messaging Between AI Coding Agents
+**Goal:** Let coding agents ask, tell, hand off and coordinate directly inside the sessions they are already running.
+**Methodology:**
+- CLI and local daemon with hooks, plugins and MCP for 8 coding CLIs.
+- Delivery into running sessions, presence, and optional wake and spawn.
+- Team messages are end-to-end encrypted per device.
+- Links: [Site](https://agentlink.agent7.dev) · [Code](https://github.com/pragnyanramtha/agentlink)
+
+### agent-ui: Web UI for Coding-Agent Sessions
+**Goal:** Watch and drive coding-agent sessions on your own server from a phone.
+**Methodology:**
+- Live view of zellij and tmux sessions, start and resume from the browser.
+- Tool calls, diffs, approvals and a full web terminal behind password login.
+- Links: [Code](https://github.com/pragnyanramtha/agent-ui)
+
 ### AIMO-3: Reasoning via LLM Fine-Tuning
 **Goal:** Optimize Phi-4 (14B) for complex multi-step problem solving.
 **Methodology:** 
@@ -100,7 +123,7 @@ He is known for his work in mathematical reasoning (AIMO3 Catalyst), abstract pa
 
 ### [Why OpenAI Sent Me $500 for a Research Project](/blogs/why-openai-sent-me-500-dollars-parameter-golf)
 *Apr 2026*
-On March 18, 2026, OpenAI launched Parameter Golf, a competition to train the best language model that fits inside 16MB and trains in under 10 minutes on 8×H100 GPUs. My submission was called XSA4_EMA_GPQ. Three techniques stacked on top of each other, each one doing a different job: **Cross-Sparse Attention (XSA4)** for architectural efficiency, **Exponential Moving Average (EMA)** for training stability, and **GPTQ Int6** for extreme compression. My score: 1.1271 BPB.
+On March 18, 2026, OpenAI launched Parameter Golf, a competition to train the best language model that fits inside 16MB and trains in under 10 minutes on 8×H100 GPUs. My submission was called XSA4_EMA_GPQ. Three techniques stacked on top of each other, each one doing a different job: **Cross-Sparse Attention (XSA4)** for architectural efficiency, **Exponential Moving Average (EMA)** for training stability, and **GPTQ Int6** for extreme compression. My score: 1.1325 BPB ([PR #531](https://github.com/openai/parameter-golf/pull/531)).
 
 ### [How I Reached #1 on ARC-AGI-2](/blogs/how-i-reached-number-1-on-arc-agi-2)
 *Apr 2026*
@@ -114,9 +137,10 @@ AIMO3 is a $2.2M Kaggle competition to make AI solve International Mathematical 
 
 ## 📚 Research Papers
 
-1.  **Scaling Context Windows to Infinity:** Analysis of position encoding and memory-efficient inference for long-sequence processing.
-2.  **Unlocking Societal Trends in Aadhaar Enrolment:** Machine learning approach to fraud detection in biometric systems.
-3.  **Quantum-Inspired LLM Inference:** (Work-in-progress) Investigating variational quantum circuits for token generation acceleration.
+1.  **HumanBench: Can AI Write Like a Human?** Benchmark paper (v0.1 research preview): three-gate scoring, public and held-out splits, bootstrap intervals. [PDF](https://humanbench.agent7.dev/humanbench.pdf)
+2.  **Scaling Context Windows to Infinity:** Analysis of position encoding and memory-efficient inference for long-sequence processing.
+3.  **Unlocking Societal Trends in Aadhaar Enrolment:** Machine learning approach to fraud detection in biometric systems.
+4.  **Quantum-Inspired LLM Inference:** (Work-in-progress) Investigating variational quantum circuits for token generation acceleration.
 
 ---
 
